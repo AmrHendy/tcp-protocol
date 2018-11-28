@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/git/tcp-protocol/Client/Client.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Client/Client.cpp.obj"
-  "D:/git/tcp-protocol/Server/Server.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Server/Server.cpp.obj"
-  "D:/git/tcp-protocol/main.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/main.cpp.obj"
+  "D:/E/CLion Problems/tcp-protocol/Client/Client.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Client/Client.cpp.obj"
+  "D:/E/CLion Problems/tcp-protocol/Server/Server.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Server/Server.cpp.obj"
+  "D:/E/CLion Problems/tcp-protocol/main.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

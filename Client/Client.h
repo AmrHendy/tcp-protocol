@@ -7,7 +7,16 @@
 
 using namespace std;
 
-#include <string>
+#include <iostream>
+#include <fstream>
+#include <cstring>
+#include <unistd.h>
+#include <cstdio>
+#include <cstdlib>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
 
 class Client {
 
@@ -19,14 +28,14 @@ private:
     int initial_window_size;
 
 public:
-    Client(string client_conf_file_dir);
+    explicit Client(string client_conf_file_dir);
     ~Client();
 
 private:
     void init_client_socket();
     void connect_to_server();
     void send_request_to_server();
-    void receieve_file();
+    void receive_file();
 };
 
 

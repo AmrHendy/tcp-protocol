@@ -1,4 +1,4 @@
-# Install script for directory: D:/git/tcp-protocol
+# Install script for directory: D:/E/CLion Problems/tcp-protocol
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/git/tcp-protocol/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
