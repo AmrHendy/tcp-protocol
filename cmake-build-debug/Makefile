@@ -149,6 +149,33 @@ Client/Client.cpp.s:
 	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Client/Client.cpp.s
 .PHONY : Client/Client.cpp.s
 
+File_Handler/FileHandler.obj: File_Handler/FileHandler.cpp.obj
+
+.PHONY : File_Handler/FileHandler.obj
+
+# target to build an object file
+File_Handler/FileHandler.cpp.obj:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.obj
+.PHONY : File_Handler/FileHandler.cpp.obj
+
+File_Handler/FileHandler.i: File_Handler/FileHandler.cpp.i
+
+.PHONY : File_Handler/FileHandler.i
+
+# target to preprocess a source file
+File_Handler/FileHandler.cpp.i:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.i
+.PHONY : File_Handler/FileHandler.cpp.i
+
+File_Handler/FileHandler.s: File_Handler/FileHandler.cpp.s
+
+.PHONY : File_Handler/FileHandler.s
+
+# target to generate assembly for a file
+File_Handler/FileHandler.cpp.s:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.s
+.PHONY : File_Handler/FileHandler.cpp.s
+
 Server/Server.obj: Server/Server.cpp.obj
 
 .PHONY : Server/Server.obj
@@ -215,6 +242,9 @@ help:
 	@echo ... Client/Client.obj
 	@echo ... Client/Client.i
 	@echo ... Client/Client.s
+	@echo ... File_Handler/FileHandler.obj
+	@echo ... File_Handler/FileHandler.i
+	@echo ... File_Handler/FileHandler.s
 	@echo ... Server/Server.obj
 	@echo ... Server/Server.i
 	@echo ... Server/Server.s

@@ -3,4 +3,4 @@ project(tcp_protocol)
 
 set(CMAKE_CXX_STANDARD 14 -DCMAKE_SH="CMAKE_SH-NOTFOUND")
 
-add_executable(tcp_protocol main.cpp Client/Client.cpp Client/Client.h Server/Server.cpp Server/Server.h)
+add_executable(tcp_protocol main.cpp Client/Client.cpp Client/Client.h Server/Server.cpp Server/Server.h "File Handler/FileHandler.cpp" "File Handler/FileHandler.h")
