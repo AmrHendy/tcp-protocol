@@ -15,7 +15,6 @@ using namespace std;
 #include <netinet/in.h>
 #include <unistd.h>
 
-
 class Server {
 
 private:
@@ -25,14 +24,16 @@ private:
     double packet_loss_prob;
     int active_clients;
     int server_socket_fd;
+    const int MAX_ALLOWED_CONNECTIONS = 20;
 
 public:
     Server(string server_conf_file_dir);
     ~Server();
 
+    void start_server();
+
 private:
     void init_server();
-    void start_server();
     void handle_client(int client_socket_fd);
     void receive_request_from_client(int client_socket_fd);
     void send_file(int client_socket_fd);
