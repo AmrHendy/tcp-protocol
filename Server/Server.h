@@ -8,6 +8,13 @@
 using namespace std;
 
 #include <string>
+#include <cstdio>
+#include <iostream>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <netinet/in.h>
+#include <unistd.h>
+
 
 class Server {
 
@@ -16,6 +23,8 @@ private:
     int maximum_window_size;
     int random_seed;
     double packet_loss_prob;
+    int active_clients;
+    int server_socket_fd;
 
 public:
     Server(string server_conf_file_dir);
