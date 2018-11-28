@@ -122,32 +122,59 @@ tcp_protocol/fast:
 	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/build
 .PHONY : tcp_protocol/fast
 
-Server/Client.obj: Server/Client.cpp.obj
+Client/Client.obj: Client/Client.cpp.obj
 
-.PHONY : Server/Client.obj
+.PHONY : Client/Client.obj
 
 # target to build an object file
-Server/Client.cpp.obj:
-	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Server/Client.cpp.obj
-.PHONY : Server/Client.cpp.obj
+Client/Client.cpp.obj:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Client/Client.cpp.obj
+.PHONY : Client/Client.cpp.obj
 
-Server/Client.i: Server/Client.cpp.i
+Client/Client.i: Client/Client.cpp.i
 
-.PHONY : Server/Client.i
+.PHONY : Client/Client.i
 
 # target to preprocess a source file
-Server/Client.cpp.i:
-	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Server/Client.cpp.i
-.PHONY : Server/Client.cpp.i
+Client/Client.cpp.i:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Client/Client.cpp.i
+.PHONY : Client/Client.cpp.i
 
-Server/Client.s: Server/Client.cpp.s
+Client/Client.s: Client/Client.cpp.s
 
-.PHONY : Server/Client.s
+.PHONY : Client/Client.s
 
 # target to generate assembly for a file
-Server/Client.cpp.s:
-	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Server/Client.cpp.s
-.PHONY : Server/Client.cpp.s
+Client/Client.cpp.s:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Client/Client.cpp.s
+.PHONY : Client/Client.cpp.s
+
+Server/Server.obj: Server/Server.cpp.obj
+
+.PHONY : Server/Server.obj
+
+# target to build an object file
+Server/Server.cpp.obj:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Server/Server.cpp.obj
+.PHONY : Server/Server.cpp.obj
+
+Server/Server.i: Server/Server.cpp.i
+
+.PHONY : Server/Server.i
+
+# target to preprocess a source file
+Server/Server.cpp.i:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Server/Server.cpp.i
+.PHONY : Server/Server.cpp.i
+
+Server/Server.s: Server/Server.cpp.s
+
+.PHONY : Server/Server.s
+
+# target to generate assembly for a file
+Server/Server.cpp.s:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Server/Server.cpp.s
+.PHONY : Server/Server.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -185,9 +212,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... tcp_protocol
 	@echo ... edit_cache
-	@echo ... Server/Client.obj
-	@echo ... Server/Client.i
-	@echo ... Server/Client.s
+	@echo ... Client/Client.obj
+	@echo ... Client/Client.i
+	@echo ... Client/Client.s
+	@echo ... Server/Server.obj
+	@echo ... Server/Server.i
+	@echo ... Server/Server.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

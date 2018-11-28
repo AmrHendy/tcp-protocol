@@ -11,20 +11,22 @@ using namespace std;
 
 class Client {
 
-    private:
+private:
     string server_ip_address;
     int server_port_number;
     int client_port_number;
     string requested_file_name;
     int initial_window_size;
 
-    public:
+public:
     Client(string client_conf_file_dir);
     ~Client();
 
-    private:
-    void sendRequestToServer();
-    void receieveFile();
+private:
+    void init_client_socket();
+    void connect_to_server();
+    void send_request_to_server();
+    void receieve_file();
 };
 
 

@@ -80,10 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/git/tcp-protocol/Server/Client.cpp">
+		<Unit filename="D:/git/tcp-protocol/Client/Client.cpp">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="D:/git/tcp-protocol/Server/Client.h">
+		<Unit filename="D:/git/tcp-protocol/Client/Client.h">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="D:/git/tcp-protocol/Server/Server.cpp">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="D:/git/tcp-protocol/Server/Server.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
 		<Unit filename="D:/git/tcp-protocol/main.cpp">
