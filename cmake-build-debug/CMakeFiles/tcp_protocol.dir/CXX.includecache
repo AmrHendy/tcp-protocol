@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/git/tcp-protocol/Server/Server.cpp
+Server.h
+D:/git/tcp-protocol/Server/Server.h
+
+D:/git/tcp-protocol/Server/Server.h
+string
+-
+cstdio
+-
+iostream
+-
+sys/socket.h
+-
+sys/types.h
+-
+netinet/in.h
+-
+unistd.h
+-
+
