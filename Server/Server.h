@@ -35,12 +35,7 @@ public:
 
 private:
     void init_server();
-<<<<<<< HEAD
 
-    void start_server();
-
-=======
->>>>>>> origin/master
     void handle_client(int client_socket_fd);
 
     void receive_request_from_client(int client_socket_fd);

@@ -17,6 +17,8 @@ using namespace std;
 #include <sys/types.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+#include <memory>
+#include <ctime>
 
 class Client {
 
@@ -26,6 +28,7 @@ private:
     int client_port_number;
     string requested_file_name;
     int initial_window_size;
+    int sock_fd;
 
 public:
     explicit Client(string client_conf_file_dir);
