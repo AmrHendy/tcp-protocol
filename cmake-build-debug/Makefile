@@ -177,32 +177,59 @@ File_Handler/FileHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.s
 .PHONY : File_Handler/FileHandler.cpp.s
 
-GBN/GBN.o: GBN/GBN.cpp.o
+GBN/GBN_receiver.o: GBN/GBN_receiver.cpp.o
 
-.PHONY : GBN/GBN.o
+.PHONY : GBN/GBN_receiver.o
 
 # target to build an object file
-GBN/GBN.cpp.o:
-	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.o
-.PHONY : GBN/GBN.cpp.o
+GBN/GBN_receiver.cpp.o:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.o
+.PHONY : GBN/GBN_receiver.cpp.o
 
-GBN/GBN.i: GBN/GBN.cpp.i
+GBN/GBN_receiver.i: GBN/GBN_receiver.cpp.i
 
-.PHONY : GBN/GBN.i
+.PHONY : GBN/GBN_receiver.i
 
 # target to preprocess a source file
-GBN/GBN.cpp.i:
-	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.i
-.PHONY : GBN/GBN.cpp.i
+GBN/GBN_receiver.cpp.i:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.i
+.PHONY : GBN/GBN_receiver.cpp.i
 
-GBN/GBN.s: GBN/GBN.cpp.s
+GBN/GBN_receiver.s: GBN/GBN_receiver.cpp.s
 
-.PHONY : GBN/GBN.s
+.PHONY : GBN/GBN_receiver.s
 
 # target to generate assembly for a file
-GBN/GBN.cpp.s:
-	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.s
-.PHONY : GBN/GBN.cpp.s
+GBN/GBN_receiver.cpp.s:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.s
+.PHONY : GBN/GBN_receiver.cpp.s
+
+GBN/GBN_sender.o: GBN/GBN_sender.cpp.o
+
+.PHONY : GBN/GBN_sender.o
+
+# target to build an object file
+GBN/GBN_sender.cpp.o:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o
+.PHONY : GBN/GBN_sender.cpp.o
+
+GBN/GBN_sender.i: GBN/GBN_sender.cpp.i
+
+.PHONY : GBN/GBN_sender.i
+
+# target to preprocess a source file
+GBN/GBN_sender.cpp.i:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.i
+.PHONY : GBN/GBN_sender.cpp.i
+
+GBN/GBN_sender.s: GBN/GBN_sender.cpp.s
+
+.PHONY : GBN/GBN_sender.s
+
+# target to generate assembly for a file
+GBN/GBN_sender.cpp.s:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.s
+.PHONY : GBN/GBN_sender.cpp.s
 
 GBN/helper.o: GBN/helper.cpp.o
 
@@ -300,9 +327,12 @@ help:
 	@echo "... File_Handler/FileHandler.o"
 	@echo "... File_Handler/FileHandler.i"
 	@echo "... File_Handler/FileHandler.s"
-	@echo "... GBN/GBN.o"
-	@echo "... GBN/GBN.i"
-	@echo "... GBN/GBN.s"
+	@echo "... GBN/GBN_receiver.o"
+	@echo "... GBN/GBN_receiver.i"
+	@echo "... GBN/GBN_receiver.s"
+	@echo "... GBN/GBN_sender.o"
+	@echo "... GBN/GBN_sender.i"
+	@echo "... GBN/GBN_sender.s"
 	@echo "... GBN/helper.o"
 	@echo "... GBN/helper.i"
 	@echo "... GBN/helper.s"

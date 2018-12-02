@@ -2,7 +2,7 @@
 // Created by arsanuos on 12/2/18.
 //
 
-#include "GBN.h"
+#include "GBN_sender.h"
 
 
 GBN::GBN(FileHandler file_handler, int client_fd): file_handler(file_handler){
@@ -11,7 +11,7 @@ GBN::GBN(FileHandler file_handler, int client_fd): file_handler(file_handler){
 }
 
 
-void GBN::data_listener(){
+void GBN::start(){
     bool sent = true;
     packet pkt;
     while(1){
@@ -59,7 +59,7 @@ bool GBN::check_timeout(){
 bool GBN::gbn_send(packet pkt){
     if(next_seq_num < base + N){
         sentpkt[next_seq_num] = pkt;
-        send(client_fd, pkt);
+        send_pkt(client_fd, pkt);
         if(base == next_seq_num){
             start_timer();
         }
@@ -71,7 +71,7 @@ bool GBN::gbn_send(packet pkt){
 
 void GBN::time_out(){
     if(check_timeout()){
-        resend_all(client_fd);
+        resend_all();
     }
 }
 
@@ -79,12 +79,12 @@ void GBN::time_out(){
 void GBN::resend_all() {
     start_timer();
     for(auto pkt : sentpkt){
-        send(client_fd, pkt);
+        send_pkt(client_fd, pkt);
     }
 }
 
 void GBN::gbn_recv() {
-    ack_packet pkt = recv__ack_pkt(client_fd);
+    ack_packet pkt = recv_ack_pkt(client_fd);
     if(!is_corrupt(pkt.cksum)){
         base = pkt.ackno + 1;
         if(base == next_seq_num){

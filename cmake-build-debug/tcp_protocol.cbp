@@ -96,10 +96,16 @@
 		<Unit filename="/home/arsanuos/projects/tcp-protocol/File Handler/FileHandler.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/GBN.cpp">
+		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/GBN_receiver.cpp">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/GBN.h">
+		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/GBN_receiver.h">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.cpp">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
 		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/helper.cpp">

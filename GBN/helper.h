@@ -28,7 +28,7 @@ struct ack_packet {
 };
 
 packet recv_pkt(int client_fd);
-ack_packet recv__ack_pkt(int client_fd);
+ack_packet recv_ack_pkt(int client_fd);
 string get_data(int client_fd, uint16_t size);
 uint16_t get_len(int client_fd);
 string get_data(int client_fd, uint16_t size);

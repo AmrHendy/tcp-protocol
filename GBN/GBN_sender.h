@@ -21,26 +21,11 @@
 
 using namespace std;
 
-struct packet {
-    /* Header */
-    uint16_t cksum; /* Optional bonus part */
-    uint16_t len;
-    uint32_t seqno;
-    /* Data */
-    string data; /* Not always 500 bytes, can be less */
-};
-
-struct ack_packet {
-    uint16_t cksum; /* Optional bonus part */
-    uint16_t len;
-    uint32_t ackno;
-};
-
 class GBN {
 
     private:
-        int base = 1;
-        int next_seq_num = 1;
+        int base = 0;
+        int next_seq_num = 0;
         clock_t timer = 0;
         double threshold = 10;/* threshold of timeout 10 seconds.*/
         FileHandler file_handler;
@@ -58,9 +43,10 @@ class GBN {
 
     public:
         GBN(FileHandler file_handler, int client_fd);
-        bool gbn_send(packet pkt);
+        void start();
         void gbn_recv(ack_packet pkt);
         void data_listener();
+        void gbn_recv();
 
 
 };

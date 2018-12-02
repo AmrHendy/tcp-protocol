@@ -6,7 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/arsanuos/projects/tcp-protocol/Client/Client.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Client/Client.cpp.o"
   "/home/arsanuos/projects/tcp-protocol/File Handler/FileHandler.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.o"
-  "/home/arsanuos/projects/tcp-protocol/GBN/GBN.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.o"
+  "/home/arsanuos/projects/tcp-protocol/GBN/GBN_receiver.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.o"
+  "/home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o"
   "/home/arsanuos/projects/tcp-protocol/GBN/helper.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.o"
   "/home/arsanuos/projects/tcp-protocol/Server/Server.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o"
   "/home/arsanuos/projects/tcp-protocol/main.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/main.cpp.o"

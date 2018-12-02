@@ -4,4 +4,4 @@ project(tcp_protocol)
 # remove -DCMAKE_SH="CMAKE_SH-NOTFOUND" on other machines
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(tcp_protocol main.cpp Client/Client.cpp Client/Client.h Server/Server.cpp Server/Server.h "File Handler/FileHandler.cpp" "File Handler/FileHandler.h" GBN/GBN.cpp GBN/GBN.h GBN/helper.h GBN/helper.cpp)
+add_executable(tcp_protocol main.cpp Client/Client.cpp Client/Client.h Server/Server.cpp Server/Server.h "File Handler/FileHandler.cpp" "File Handler/FileHandler.h" GBN/GBN_sender.cpp GBN/GBN_sender.h GBN/helper.h GBN/helper.cpp GBN/GBN_receiver.cpp GBN/GBN_receiver.h)

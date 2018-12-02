@@ -109,18 +109,18 @@ CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/arsanuos/projects/tcp-protocol/File Handler/FileHandler.cpp" -o CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.s
 
-CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.o: CMakeFiles/tcp_protocol.dir/flags.make
-CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.o: ../GBN/GBN.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.o -c /home/arsanuos/projects/tcp-protocol/GBN/GBN.cpp
+CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o: CMakeFiles/tcp_protocol.dir/flags.make
+CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o: ../GBN/GBN_sender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o -c /home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.cpp
 
-CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arsanuos/projects/tcp-protocol/GBN/GBN.cpp > CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.i
+CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.cpp > CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.i
 
-CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arsanuos/projects/tcp-protocol/GBN/GBN.cpp -o CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.s
+CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.cpp -o CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.s
 
 CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.o: CMakeFiles/tcp_protocol.dir/flags.make
 CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.o: ../GBN/helper.cpp
@@ -135,14 +135,28 @@ CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arsanuos/projects/tcp-protocol/GBN/helper.cpp -o CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.s
 
+CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.o: CMakeFiles/tcp_protocol.dir/flags.make
+CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.o: ../GBN/GBN_receiver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.o -c /home/arsanuos/projects/tcp-protocol/GBN/GBN_receiver.cpp
+
+CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arsanuos/projects/tcp-protocol/GBN/GBN_receiver.cpp > CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.i
+
+CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arsanuos/projects/tcp-protocol/GBN/GBN_receiver.cpp -o CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.s
+
 # Object files for target tcp_protocol
 tcp_protocol_OBJECTS = \
 "CMakeFiles/tcp_protocol.dir/main.cpp.o" \
 "CMakeFiles/tcp_protocol.dir/Client/Client.cpp.o" \
 "CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o" \
 "CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.o" \
-"CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.o" \
-"CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.o"
+"CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o" \
+"CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.o" \
+"CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.o"
 
 # External object files for target tcp_protocol
 tcp_protocol_EXTERNAL_OBJECTS =
@@ -151,11 +165,12 @@ tcp_protocol: CMakeFiles/tcp_protocol.dir/main.cpp.o
 tcp_protocol: CMakeFiles/tcp_protocol.dir/Client/Client.cpp.o
 tcp_protocol: CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o
 tcp_protocol: CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.o
-tcp_protocol: CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.o
+tcp_protocol: CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o
 tcp_protocol: CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.o
+tcp_protocol: CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.o
 tcp_protocol: CMakeFiles/tcp_protocol.dir/build.make
 tcp_protocol: CMakeFiles/tcp_protocol.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable tcp_protocol"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable tcp_protocol"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tcp_protocol.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

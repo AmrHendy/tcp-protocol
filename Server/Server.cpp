@@ -56,7 +56,7 @@ void Server::start_server() {
             continue;
         }
         if(active_clients == MAX_ALLOWED_CONNECTIONS){
-            printf("Reached the max limit number of connections, So server can't handle that client connection\n")
+            printf("Reached the max limit number of connections, So server can't handle that client connection\n");
             continue;
         }
         printf("Successfully Established Connection with a Client has fd = %d \n",client_socket_fd);

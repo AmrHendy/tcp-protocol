@@ -13,7 +13,7 @@ packet recv_pkt(int client_fd){
     return pkt;
 }
 
-ack_packet recv__ack_pkt(int client_fd){
+ack_packet recv_ack_pkt(int client_fd){
     ack_packet pkt;
     pkt.len = get_len(client_fd);
     pkt.ackno = get_seq_num(client_fd);
