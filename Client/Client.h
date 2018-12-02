@@ -7,7 +7,18 @@
 
 using namespace std;
 
-#include <string>
+#include <iostream>
+#include <fstream>
+#include <cstring>
+#include <unistd.h>
+#include <cstdio>
+#include <cstdlib>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <memory>
+#include <ctime>
 
 class Client {
 
@@ -17,16 +28,17 @@ private:
     int client_port_number;
     string requested_file_name;
     int initial_window_size;
+    int sock_fd;
 
 public:
-    Client(string client_conf_file_dir);
+    explicit Client(string client_conf_file_dir);
     ~Client();
 
 private:
     void init_client_socket();
     void connect_to_server();
     void send_request_to_server();
-    void receieve_file();
+    void receive_file();
 };
 
 

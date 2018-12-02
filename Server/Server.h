@@ -28,14 +28,18 @@ private:
 
 public:
     Server(string server_conf_file_dir);
+
     ~Server();
 
     void start_server();
 
 private:
     void init_server();
+
     void handle_client(int client_socket_fd);
+
     void receive_request_from_client(int client_socket_fd);
+
     void send_file(int client_socket_fd);
 };
 

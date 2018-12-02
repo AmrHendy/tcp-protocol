@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\git\tcp-protocol
+CMAKE_SOURCE_DIR = "D:\E\CLion Problems\tcp-protocol"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\git\tcp-protocol\cmake-build-debug
+CMAKE_BINARY_DIR = "D:\E\CLion Problems\tcp-protocol\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tcp_protocol.dir/depend.make
@@ -58,55 +58,55 @@ include CMakeFiles/tcp_protocol.dir/flags.make
 
 CMakeFiles/tcp_protocol.dir/main.cpp.obj: CMakeFiles/tcp_protocol.dir/flags.make
 CMakeFiles/tcp_protocol.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\tcp-protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tcp_protocol.dir/main.cpp.obj"
-	D:\programes\CLion\Mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tcp_protocol.dir\main.cpp.obj -c D:\git\tcp-protocol\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\E\CLion Problems\tcp-protocol\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tcp_protocol.dir/main.cpp.obj"
+	C:\MinGw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tcp_protocol.dir\main.cpp.obj -c "D:\E\CLion Problems\tcp-protocol\main.cpp"
 
 CMakeFiles/tcp_protocol.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_protocol.dir/main.cpp.i"
-	D:\programes\CLion\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\tcp-protocol\main.cpp > CMakeFiles\tcp_protocol.dir\main.cpp.i
+	C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\E\CLion Problems\tcp-protocol\main.cpp" > CMakeFiles\tcp_protocol.dir\main.cpp.i
 
 CMakeFiles/tcp_protocol.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_protocol.dir/main.cpp.s"
-	D:\programes\CLion\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\tcp-protocol\main.cpp -o CMakeFiles\tcp_protocol.dir\main.cpp.s
+	C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\E\CLion Problems\tcp-protocol\main.cpp" -o CMakeFiles\tcp_protocol.dir\main.cpp.s
 
 CMakeFiles/tcp_protocol.dir/Client/Client.cpp.obj: CMakeFiles/tcp_protocol.dir/flags.make
 CMakeFiles/tcp_protocol.dir/Client/Client.cpp.obj: ../Client/Client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\tcp-protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tcp_protocol.dir/Client/Client.cpp.obj"
-	D:\programes\CLion\Mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tcp_protocol.dir\Client\Client.cpp.obj -c D:\git\tcp-protocol\Client\Client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\E\CLion Problems\tcp-protocol\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tcp_protocol.dir/Client/Client.cpp.obj"
+	C:\MinGw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tcp_protocol.dir\Client\Client.cpp.obj -c "D:\E\CLion Problems\tcp-protocol\Client\Client.cpp"
 
 CMakeFiles/tcp_protocol.dir/Client/Client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_protocol.dir/Client/Client.cpp.i"
-	D:\programes\CLion\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\tcp-protocol\Client\Client.cpp > CMakeFiles\tcp_protocol.dir\Client\Client.cpp.i
+	C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\E\CLion Problems\tcp-protocol\Client\Client.cpp" > CMakeFiles\tcp_protocol.dir\Client\Client.cpp.i
 
 CMakeFiles/tcp_protocol.dir/Client/Client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_protocol.dir/Client/Client.cpp.s"
-	D:\programes\CLion\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\tcp-protocol\Client\Client.cpp -o CMakeFiles\tcp_protocol.dir\Client\Client.cpp.s
+	C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\E\CLion Problems\tcp-protocol\Client\Client.cpp" -o CMakeFiles\tcp_protocol.dir\Client\Client.cpp.s
 
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.obj: CMakeFiles/tcp_protocol.dir/flags.make
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.obj: ../Server/Server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\tcp-protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tcp_protocol.dir/Server/Server.cpp.obj"
-	D:\programes\CLion\Mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tcp_protocol.dir\Server\Server.cpp.obj -c D:\git\tcp-protocol\Server\Server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\E\CLion Problems\tcp-protocol\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tcp_protocol.dir/Server/Server.cpp.obj"
+	C:\MinGw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tcp_protocol.dir\Server\Server.cpp.obj -c "D:\E\CLion Problems\tcp-protocol\Server\Server.cpp"
 
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_protocol.dir/Server/Server.cpp.i"
-	D:\programes\CLion\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\tcp-protocol\Server\Server.cpp > CMakeFiles\tcp_protocol.dir\Server\Server.cpp.i
+	C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\E\CLion Problems\tcp-protocol\Server\Server.cpp" > CMakeFiles\tcp_protocol.dir\Server\Server.cpp.i
 
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_protocol.dir/Server/Server.cpp.s"
-	D:\programes\CLion\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\tcp-protocol\Server\Server.cpp -o CMakeFiles\tcp_protocol.dir\Server\Server.cpp.s
+	C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\E\CLion Problems\tcp-protocol\Server\Server.cpp" -o CMakeFiles\tcp_protocol.dir\Server\Server.cpp.s
 
 CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.obj: CMakeFiles/tcp_protocol.dir/flags.make
 CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.obj: ../File\ Handler/FileHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\tcp-protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.obj"
-	D:\programes\CLion\Mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tcp_protocol.dir\File_Handler\FileHandler.cpp.obj -c "D:\git\tcp-protocol\File Handler\FileHandler.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\E\CLion Problems\tcp-protocol\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.obj"
+	C:\MinGw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tcp_protocol.dir\File_Handler\FileHandler.cpp.obj -c "D:\E\CLion Problems\tcp-protocol\File Handler\FileHandler.cpp"
 
 CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.i"
-	D:\programes\CLion\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\git\tcp-protocol\File Handler\FileHandler.cpp" > CMakeFiles\tcp_protocol.dir\File_Handler\FileHandler.cpp.i
+	C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\E\CLion Problems\tcp-protocol\File Handler\FileHandler.cpp" > CMakeFiles\tcp_protocol.dir\File_Handler\FileHandler.cpp.i
 
 CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.s"
-	D:\programes\CLion\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\git\tcp-protocol\File Handler\FileHandler.cpp" -o CMakeFiles\tcp_protocol.dir\File_Handler\FileHandler.cpp.s
+	C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\E\CLion Problems\tcp-protocol\File Handler\FileHandler.cpp" -o CMakeFiles\tcp_protocol.dir\File_Handler\FileHandler.cpp.s
 
 # Object files for target tcp_protocol
 tcp_protocol_OBJECTS = \
@@ -126,7 +126,7 @@ tcp_protocol.exe: CMakeFiles/tcp_protocol.dir/build.make
 tcp_protocol.exe: CMakeFiles/tcp_protocol.dir/linklibs.rsp
 tcp_protocol.exe: CMakeFiles/tcp_protocol.dir/objects1.rsp
 tcp_protocol.exe: CMakeFiles/tcp_protocol.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\git\tcp-protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tcp_protocol.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\E\CLion Problems\tcp-protocol\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tcp_protocol.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tcp_protocol.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -139,6 +139,6 @@ CMakeFiles/tcp_protocol.dir/clean:
 .PHONY : CMakeFiles/tcp_protocol.dir/clean
 
 CMakeFiles/tcp_protocol.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\git\tcp-protocol D:\git\tcp-protocol D:\git\tcp-protocol\cmake-build-debug D:\git\tcp-protocol\cmake-build-debug D:\git\tcp-protocol\cmake-build-debug\CMakeFiles\tcp_protocol.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\E\CLion Problems\tcp-protocol" "D:\E\CLion Problems\tcp-protocol" "D:\E\CLion Problems\tcp-protocol\cmake-build-debug" "D:\E\CLion Problems\tcp-protocol\cmake-build-debug" "D:\E\CLion Problems\tcp-protocol\cmake-build-debug\CMakeFiles\tcp_protocol.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/tcp_protocol.dir/depend
 
