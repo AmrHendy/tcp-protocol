@@ -1,12 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tcp_protocol.dir/main.cpp.obj"
-  "CMakeFiles/tcp_protocol.dir/Client/Client.cpp.obj"
-  "CMakeFiles/tcp_protocol.dir/Server/Server.cpp.obj"
-  "CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.obj"
+  "CMakeFiles/tcp_protocol.dir/main.cpp.o"
+  "CMakeFiles/tcp_protocol.dir/Client/Client.cpp.o"
+  "CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o"
+  "CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.o"
+  "CMakeFiles/tcp_protocol.dir/GBN/GBN.cpp.o"
+  "CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.o"
   "tcp_protocol.pdb"
-  "tcp_protocol.exe"
-  "tcp_protocol.exe.manifest"
-  "libtcp_protocol.dll.a"
+  "tcp_protocol"
 )
 
 # Per-language clean rules from dependency scanning.
