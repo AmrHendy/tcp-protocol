@@ -116,7 +116,13 @@
 		<Unit filename="D:/E/CLion Problems/tcp-protocol/Server/Server.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/ack_packet.h">
+			<Option target="tcp_protocol"/>
+		</Unit>
 		<Unit filename="D:/E/CLion Problems/tcp-protocol/main.cpp">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/packet.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
 		<Unit filename="D:/E/CLion Problems/tcp-protocol/CMakeLists.txt">
