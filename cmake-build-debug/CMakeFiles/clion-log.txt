@@ -1,4 +1,4 @@
-/home/arsanuos/clion-2018.2.6/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/arsanuos/projects/tcp-protocol
+"C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/MinGw/bin/make.exe -DCMAKE_C_COMPILER=C:/MinGw/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/MinGw/bin/g++.exe -G "CodeBlocks - MinGW Makefiles" "D:\E\CLion Problems\tcp-protocol"
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/arsanuos/projects/tcp-protocol/cmake-build-debug
+-- Build files have been written to: D:/E/CLion Problems/tcp-protocol/cmake-build-debug

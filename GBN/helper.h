@@ -10,22 +10,10 @@
 #include <stdint.h>
 #include <string>
 
+#include "packet.h"
+#include "ack_packet.h"
+
 using namespace std;
-
-struct packet {
-    /* Header */
-    uint16_t cksum; /* Optional bonus part */
-    uint16_t len;
-    uint32_t seqno;
-    /* Data */
-    string data; /* Not always 500 bytes, can be less */
-};
-
-struct ack_packet {
-    uint16_t cksum; /* Optional bonus part */
-    uint16_t len;
-    uint32_t ackno;
-};
 
 packet recv_pkt(int client_fd);
 ack_packet recv_ack_pkt(int client_fd);

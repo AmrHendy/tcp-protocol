@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/arsanuos/projects/tcp-protocol/Client/Client.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Client/Client.cpp.o"
-  "/home/arsanuos/projects/tcp-protocol/File Handler/FileHandler.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.o"
-  "/home/arsanuos/projects/tcp-protocol/GBN/GBN_receiver.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.o"
-  "/home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o"
-  "/home/arsanuos/projects/tcp-protocol/GBN/helper.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.o"
-  "/home/arsanuos/projects/tcp-protocol/Server/Server.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o"
-  "/home/arsanuos/projects/tcp-protocol/main.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/main.cpp.o"
+  "D:/E/CLion Problems/tcp-protocol/Client/Client.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Client/Client.cpp.obj"
+  "D:/E/CLion Problems/tcp-protocol/File Handler/FileHandler.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.obj"
+  "D:/E/CLion Problems/tcp-protocol/GBN/GBN_receiver.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.obj"
+  "D:/E/CLion Problems/tcp-protocol/GBN/GBN_sender.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.obj"
+  "D:/E/CLion Problems/tcp-protocol/GBN/helper.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.obj"
+  "D:/E/CLion Problems/tcp-protocol/Server/Server.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Server/Server.cpp.obj"
+  "D:/E/CLion Problems/tcp-protocol/main.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

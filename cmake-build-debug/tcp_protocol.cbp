@@ -8,122 +8,118 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/arsanuos/projects/tcp-protocol/cmake-build-debug"/>
+				<Option working_dir="D:/E/CLion Problems/tcp-protocol/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/arsanuos/projects/tcp-protocol/cmake-build-debug"/>
+				<Option working_dir="D:/E/CLion Problems/tcp-protocol/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/arsanuos/projects/tcp-protocol/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tcp_protocol">
-				<Option output="/home/arsanuos/projects/tcp-protocol/cmake-build-debug/tcp_protocol" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/arsanuos/projects/tcp-protocol/cmake-build-debug"/>
+				<Option output="D:/E/CLion Problems/tcp-protocol/cmake-build-debug/tcp_protocol.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/E/CLion Problems/tcp-protocol/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../include/c++/7.3.0"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../include/c++/7.3.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../include/c++/7.3.0/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 tcp_protocol"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 tcp_protocol"/>
+					<CompileFile command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tcp_protocol/fast">
-				<Option output="/home/arsanuos/projects/tcp-protocol/cmake-build-debug/tcp_protocol" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/arsanuos/projects/tcp-protocol/cmake-build-debug"/>
+				<Option output="D:/E/CLion Problems/tcp-protocol/cmake-build-debug/tcp_protocol.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/E/CLion Problems/tcp-protocol/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../include/c++/7.3.0"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../include/c++/7.3.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../include/c++/7.3.0/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 tcp_protocol/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/arsanuos/projects/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 tcp_protocol/fast"/>
+					<CompileFile command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/E/CLion Problems/tcp-protocol/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/bin/make.exe -f &quot;D:/E/CLion Problems/tcp-protocol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/Client/Client.cpp">
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/Client/Client.cpp">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/Client/Client.h">
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/Client/Client.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/File Handler/FileHandler.cpp">
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/File Handler/FileHandler.cpp">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/File Handler/FileHandler.h">
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/File Handler/FileHandler.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/GBN_receiver.cpp">
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/GBN/GBN_receiver.cpp">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/GBN_receiver.h">
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/GBN/GBN_receiver.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.cpp">
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/GBN/GBN_sender.cpp">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.h">
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/GBN/GBN_sender.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/helper.cpp">
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/GBN/helper.cpp">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/helper.h">
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/GBN/helper.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/Server/Server.cpp">
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/Server/Server.cpp">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/Server/Server.h">
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/Server/Server.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/main.cpp">
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/main.cpp">
 			<Option target="tcp_protocol"/>
 		</Unit>
-		<Unit filename="/home/arsanuos/projects/tcp-protocol/CMakeLists.txt">
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
