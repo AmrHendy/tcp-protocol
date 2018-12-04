@@ -147,6 +147,32 @@ CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.s"
 	C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\E\CLion Problems\tcp-protocol\GBN\GBN_receiver.cpp" -o CMakeFiles\tcp_protocol.dir\GBN\GBN_receiver.cpp.s
 
+CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.obj: CMakeFiles/tcp_protocol.dir/flags.make
+CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.obj: ../SR/SR_Sender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\E\CLion Problems\tcp-protocol\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.obj"
+	C:\MinGw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tcp_protocol.dir\SR\SR_Sender.cpp.obj -c "D:\E\CLion Problems\tcp-protocol\SR\SR_Sender.cpp"
+
+CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.i"
+	C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\E\CLion Problems\tcp-protocol\SR\SR_Sender.cpp" > CMakeFiles\tcp_protocol.dir\SR\SR_Sender.cpp.i
+
+CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.s"
+	C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\E\CLion Problems\tcp-protocol\SR\SR_Sender.cpp" -o CMakeFiles\tcp_protocol.dir\SR\SR_Sender.cpp.s
+
+CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.obj: CMakeFiles/tcp_protocol.dir/flags.make
+CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.obj: ../SR/SR_Receiver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\E\CLion Problems\tcp-protocol\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.obj"
+	C:\MinGw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tcp_protocol.dir\SR\SR_Receiver.cpp.obj -c "D:\E\CLion Problems\tcp-protocol\SR\SR_Receiver.cpp"
+
+CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.i"
+	C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\E\CLion Problems\tcp-protocol\SR\SR_Receiver.cpp" > CMakeFiles\tcp_protocol.dir\SR\SR_Receiver.cpp.i
+
+CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.s"
+	C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\E\CLion Problems\tcp-protocol\SR\SR_Receiver.cpp" -o CMakeFiles\tcp_protocol.dir\SR\SR_Receiver.cpp.s
+
 # Object files for target tcp_protocol
 tcp_protocol_OBJECTS = \
 "CMakeFiles/tcp_protocol.dir/main.cpp.obj" \
@@ -155,7 +181,9 @@ tcp_protocol_OBJECTS = \
 "CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.obj" \
 "CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.obj" \
 "CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.obj" \
-"CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.obj"
+"CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.obj" \
+"CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.obj" \
+"CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.obj"
 
 # External object files for target tcp_protocol
 tcp_protocol_EXTERNAL_OBJECTS =
@@ -167,11 +195,13 @@ tcp_protocol.exe: CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.obj
 tcp_protocol.exe: CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.obj
 tcp_protocol.exe: CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.obj
 tcp_protocol.exe: CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.obj
+tcp_protocol.exe: CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.obj
+tcp_protocol.exe: CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.obj
 tcp_protocol.exe: CMakeFiles/tcp_protocol.dir/build.make
 tcp_protocol.exe: CMakeFiles/tcp_protocol.dir/linklibs.rsp
 tcp_protocol.exe: CMakeFiles/tcp_protocol.dir/objects1.rsp
 tcp_protocol.exe: CMakeFiles/tcp_protocol.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\E\CLion Problems\tcp-protocol\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable tcp_protocol.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\E\CLion Problems\tcp-protocol\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable tcp_protocol.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tcp_protocol.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

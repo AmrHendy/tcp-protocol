@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.obj"
   "CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.obj"
   "CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.obj"
+  "CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.obj"
+  "CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.obj"
   "tcp_protocol.pdb"
   "tcp_protocol.exe"
   "tcp_protocol.exe.manifest"

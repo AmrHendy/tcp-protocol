@@ -5,6 +5,10 @@
 #ifndef TCP_PROTOCOL_PACKET_H
 #define TCP_PROTOCOL_PACKET_H
 
+#include <string>
+
+using namespace std;
+
 struct packet {
     /* Header */
     uint16_t cksum; /* Optional bonus part */

@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/E/CLion Problems/tcp-protocol/GBN/GBN_receiver.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/GBN/GBN_receiver.cpp.obj"
   "D:/E/CLion Problems/tcp-protocol/GBN/GBN_sender.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.obj"
   "D:/E/CLion Problems/tcp-protocol/GBN/helper.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.obj"
+  "D:/E/CLion Problems/tcp-protocol/SR/SR_Receiver.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.obj"
+  "D:/E/CLion Problems/tcp-protocol/SR/SR_Sender.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.obj"
   "D:/E/CLion Problems/tcp-protocol/Server/Server.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Server/Server.cpp.obj"
   "D:/E/CLion Problems/tcp-protocol/main.cpp" "D:/E/CLion Problems/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/main.cpp.obj"
   )

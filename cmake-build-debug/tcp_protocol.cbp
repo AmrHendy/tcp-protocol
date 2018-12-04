@@ -110,6 +110,18 @@
 		<Unit filename="D:/E/CLion Problems/tcp-protocol/GBN/helper.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/SR/SR_Receiver.cpp">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/SR/SR_Receiver.h">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/SR/SR_Sender.cpp">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="D:/E/CLion Problems/tcp-protocol/SR/SR_Sender.h">
+			<Option target="tcp_protocol"/>
+		</Unit>
 		<Unit filename="D:/E/CLion Problems/tcp-protocol/Server/Server.cpp">
 			<Option target="tcp_protocol"/>
 		</Unit>

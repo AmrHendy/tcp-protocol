@@ -257,6 +257,60 @@ GBN/helper.cpp.s:
 	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/GBN/helper.cpp.s
 .PHONY : GBN/helper.cpp.s
 
+SR/SR_Receiver.obj: SR/SR_Receiver.cpp.obj
+
+.PHONY : SR/SR_Receiver.obj
+
+# target to build an object file
+SR/SR_Receiver.cpp.obj:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.obj
+.PHONY : SR/SR_Receiver.cpp.obj
+
+SR/SR_Receiver.i: SR/SR_Receiver.cpp.i
+
+.PHONY : SR/SR_Receiver.i
+
+# target to preprocess a source file
+SR/SR_Receiver.cpp.i:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.i
+.PHONY : SR/SR_Receiver.cpp.i
+
+SR/SR_Receiver.s: SR/SR_Receiver.cpp.s
+
+.PHONY : SR/SR_Receiver.s
+
+# target to generate assembly for a file
+SR/SR_Receiver.cpp.s:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.s
+.PHONY : SR/SR_Receiver.cpp.s
+
+SR/SR_Sender.obj: SR/SR_Sender.cpp.obj
+
+.PHONY : SR/SR_Sender.obj
+
+# target to build an object file
+SR/SR_Sender.cpp.obj:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.obj
+.PHONY : SR/SR_Sender.cpp.obj
+
+SR/SR_Sender.i: SR/SR_Sender.cpp.i
+
+.PHONY : SR/SR_Sender.i
+
+# target to preprocess a source file
+SR/SR_Sender.cpp.i:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.i
+.PHONY : SR/SR_Sender.cpp.i
+
+SR/SR_Sender.s: SR/SR_Sender.cpp.s
+
+.PHONY : SR/SR_Sender.s
+
+# target to generate assembly for a file
+SR/SR_Sender.cpp.s:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.s
+.PHONY : SR/SR_Sender.cpp.s
+
 Server/Server.obj: Server/Server.cpp.obj
 
 .PHONY : Server/Server.obj
@@ -335,6 +389,12 @@ help:
 	@echo ... GBN/helper.obj
 	@echo ... GBN/helper.i
 	@echo ... GBN/helper.s
+	@echo ... SR/SR_Receiver.obj
+	@echo ... SR/SR_Receiver.i
+	@echo ... SR/SR_Receiver.s
+	@echo ... SR/SR_Sender.obj
+	@echo ... SR/SR_Sender.i
+	@echo ... SR/SR_Sender.s
 	@echo ... Server/Server.obj
 	@echo ... Server/Server.i
 	@echo ... Server/Server.s
