@@ -5,7 +5,7 @@
 
 
 GBN::GBN(FileHandler file_handler, int client_fd) : file_handler(file_handler) {
-    this.client_fd = client_fd;
+    this->client_fd = client_fd;
     sentpkt.resize(N);
 }
 
@@ -20,7 +20,7 @@ void GBN::start() {
         if (sent) {
             pkt.data = file_handler.get_current_chunk_data();
             pkt.len = pkt.data.length() + 2 + 4; /* len = 2 , seqno = 4*/
-            pkt.seqno = this.next_seq_num;
+            pkt.seqno = this->next_seq_num;
         }
         //send.
         sent = gbn_send(pkt);
@@ -43,15 +43,15 @@ clock_t GBN::start_timer() {
 }
 
 void GBN::stop_timer() {
-    this.timer = -1;
+    timer = -1;
 }
 
 bool GBN::check_timeout() {
-    if (this.timer == -1) {
+    if (timer == -1) {
         return false;
     }
     clock_t now = clock();
-    return ((now - this.timer) / (double) CLOCKS_PER_SEC) >= this.threshold;
+    return ((now - timer) / (double) CLOCKS_PER_SEC) >= this->threshold;
 }
 
 
