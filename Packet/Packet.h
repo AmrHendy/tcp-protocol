@@ -6,8 +6,7 @@
 #define TCP_PROTOCOL_PACKET_H
 
 #include <cstdint >
-
-#define CHUNK_SIZE 500
+#include "../Utils/constants.h"
 
 /* Data-only packets */
 struct Packet {

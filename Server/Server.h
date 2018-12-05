@@ -15,6 +15,11 @@ using namespace std;
 #include <netinet/in.h>
 #include <unistd.h>
 
+#include "../Sender/Sender.h"
+#include "../Receiver/Receiver.h"
+#include "../File Handler/FileReader.h"
+#include "../Utils/constants.h"
+
 class Server {
 
 private:
@@ -31,7 +36,7 @@ public:
 
     ~Server();
 
-    void start_server();
+    void start_server(int strategy_option);
 
 private:
     void init_server();

@@ -17,9 +17,9 @@ public:
     explicit Receiver();
     ~Receiver();
 
-    Packet receive_packet(int socket_fd, struct sockaddr *socket_address);
-    Ack_Packet receive_ack_packet(int socket_fd, struct sockaddr *socket_address);
-    Ack_Server_Packet receive_ack_server_packet(int socket_fd, struct sockaddr *socket_address);
+    static Packet receive_packet(int socket_fd, struct sockaddr *socket_address);
+    static Ack_Packet receive_ack_packet(int socket_fd, struct sockaddr *socket_address);
+    static Ack_Server_Packet receive_ack_server_packet(int socket_fd, struct sockaddr *socket_address);
 };
 
 #endif //TCP_PROTOCOL_RECEIVER_H

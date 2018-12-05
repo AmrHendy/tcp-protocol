@@ -119,6 +119,9 @@
 		<Unit filename="D:/git/tcp-protocol/Server/Server.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
+		<Unit filename="D:/git/tcp-protocol/Utils/constants.h">
+			<Option target="tcp_protocol"/>
+		</Unit>
 		<Unit filename="D:/git/tcp-protocol/main.cpp">
 			<Option target="tcp_protocol"/>
 		</Unit>

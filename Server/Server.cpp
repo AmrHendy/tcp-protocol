@@ -3,6 +3,7 @@
 //
 
 #include "Server.h"
+#include "../File Handler/FileReader.h"
 
 Server::Server(string server_conf_file_dir) {
     freopen(server_conf_file_dir.c_str(), "r", stdin);
@@ -38,25 +39,33 @@ void Server::init_server() {
     }
 }
 
-void Server::start_server() {
+void Server::start_server(int strategy_option) {
     init_server();
     printf("Server is waiting for clients\n");
     while(1) {
         /* server main loop */
         printf("Successfully Connected with a Client");
-        struct sockaddr_in client_address;
-        const int MAXSIZE = 5000;
-        char * buffer = (char*) malloc(MAXSIZE);
+        struct sockaddr *client_address;
         // receive the file name
-        int n = recvfrom(server_socket_fd, buffer, sizeof(buffer),
-                         0, (struct sockaddr*)&client_address, sizeof(client_address));
-        // send ack with number of packets
-        // send the file
+        Packet packet = Receiver::receive_packet(server_socket_fd, client_address);
+        // checking the file
+        FileReader file_reader = FileReader((char*) packet.data, CHUNK_SIZE);
+        int number_of_packets = ceil(file_reader.get_file_size() * 1.0 / CHUNK_SIZE);
+        // sending the ack with the number of packets which will be sended
+        Sender sender = Sender(client_address);
+        Ack_Server_Packet server_ack_packet;
+        server_ack_packet.packets_numbers = number_of_packets
+        sender.send_server_ack(server_ack_packet, server_socket_fd);
+        // call the desired method to send the file
+        if(strategy_option == 0){
+            // stop and wait
+        }
+        else if(strategy_option == 1){
+            // selective repeat
+        }
+        else{
+            // GBN
+        }
         printf("Finished Client\n");
     }
-}
-
-// That thread will serve the single client
-void Server::handle_client(int client_socket_fd) {
-
 }
