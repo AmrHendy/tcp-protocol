@@ -8,6 +8,8 @@
 using namespace std;
 
 #include <string>
+#include <cstring>
+#include "../Packet/Packet.h"
 
 class FileReader {
 
@@ -23,8 +25,8 @@ public:
     int get_file_size();
     bool is_finished();
     int get_current_chunk_index();
-    string get_current_chunk_data();
-    string get_chunk_data(int chunk_index);
+    Packet get_current_chunk_data();
+    Packet get_chunk_data(int chunk_index);
     void advance_chunk_pointer();
 };
 

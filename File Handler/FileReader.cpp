@@ -29,7 +29,7 @@ int FileReader::get_current_chunk_index() {
     return current_chunk_index;
 }
 
-string FileReader::get_current_chunk_data() {
+Packet FileReader::get_current_chunk_data() {
     if(is_finished()){
         perror("No remaining bytes to be read");
     }
@@ -41,7 +41,7 @@ void FileReader::advance_chunk_pointer() {
     current_chunk_index++;
 }
 
-string FileReader::get_chunk_data(int chunk_index) {
+Packet FileReader::get_chunk_data(int chunk_index) {
     if(chunk_index * chunk_size >= get_file_size()){
         perror("No remaining bytes to be read");
     }
@@ -51,7 +51,13 @@ string FileReader::get_chunk_data(int chunk_index) {
     if(bytes_readed != chunk_size && ftell(file) != SEEK_END){
         perror("Reading File Error");
     }
-    return string(buffer);
+    Packet packet;
+    strcpy(packet.data, buffer);
+    packet.seqno = chunk_index;
+    packet.len = bytes_readed;
+    // TODO
+    //packet.cksum =
+    return packet;
 }
 
 bool FileReader::is_finished(){
