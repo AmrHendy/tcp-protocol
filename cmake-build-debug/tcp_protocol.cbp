@@ -101,6 +101,12 @@
 		<Unit filename="D:/git/tcp-protocol/Packet/Packet.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
+		<Unit filename="D:/git/tcp-protocol/Receiver/Receiver.cpp">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="D:/git/tcp-protocol/Receiver/Receiver.h">
+			<Option target="tcp_protocol"/>
+		</Unit>
 		<Unit filename="D:/git/tcp-protocol/Sender/Sender.cpp">
 			<Option target="tcp_protocol"/>
 		</Unit>
