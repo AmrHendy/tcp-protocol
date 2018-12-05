@@ -10,7 +10,7 @@
 #define CHUNK_SIZE 500
 
 /* Data-only packets */
-struct packet {
+struct Packet {
     /* Header */
     uint16_t cksum; /* Optional bonus part */
     uint16_t len;
@@ -20,7 +20,7 @@ struct packet {
 };
 
 /* Ack-only packets are only 8 bytes */
-struct ack_packet {
+struct Ack_Packet {
     uint16_t cksum; /* Optional bonus part */
     uint16_t len;
     uint32_t ackno;
@@ -28,7 +28,7 @@ struct ack_packet {
 
 
 /* Ack from server including the number of packets of the desired file */
-struct ack_server_packet {
+struct Ack_Server_Packet {
     uint32_t packets_numbers;
 };
 
