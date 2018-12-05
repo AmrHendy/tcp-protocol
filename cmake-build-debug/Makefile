@@ -203,6 +203,33 @@ File_Handler/FileWriter.cpp.s:
 	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileWriter.cpp.s
 .PHONY : File_Handler/FileWriter.cpp.s
 
+Sender/Sender.obj: Sender/Sender.cpp.obj
+
+.PHONY : Sender/Sender.obj
+
+# target to build an object file
+Sender/Sender.cpp.obj:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Sender/Sender.cpp.obj
+.PHONY : Sender/Sender.cpp.obj
+
+Sender/Sender.i: Sender/Sender.cpp.i
+
+.PHONY : Sender/Sender.i
+
+# target to preprocess a source file
+Sender/Sender.cpp.i:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Sender/Sender.cpp.i
+.PHONY : Sender/Sender.cpp.i
+
+Sender/Sender.s: Sender/Sender.cpp.s
+
+.PHONY : Sender/Sender.s
+
+# target to generate assembly for a file
+Sender/Sender.cpp.s:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Sender/Sender.cpp.s
+.PHONY : Sender/Sender.cpp.s
+
 Server/Server.obj: Server/Server.cpp.obj
 
 .PHONY : Server/Server.obj
@@ -275,6 +302,9 @@ help:
 	@echo ... File_Handler/FileWriter.obj
 	@echo ... File_Handler/FileWriter.i
 	@echo ... File_Handler/FileWriter.s
+	@echo ... Sender/Sender.obj
+	@echo ... Sender/Sender.i
+	@echo ... Sender/Sender.s
 	@echo ... Server/Server.obj
 	@echo ... Server/Server.i
 	@echo ... Server/Server.s

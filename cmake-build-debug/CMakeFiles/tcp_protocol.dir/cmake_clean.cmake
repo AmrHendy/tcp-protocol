@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/tcp_protocol.dir/Server/Server.cpp.obj"
   "CMakeFiles/tcp_protocol.dir/File_Handler/FileReader.cpp.obj"
   "CMakeFiles/tcp_protocol.dir/File_Handler/FileWriter.cpp.obj"
+  "CMakeFiles/tcp_protocol.dir/Sender/Sender.cpp.obj"
   "tcp_protocol.pdb"
   "tcp_protocol.exe"
   "tcp_protocol.exe.manifest"

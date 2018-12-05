@@ -17,8 +17,9 @@
 //Path to a program.
 CMAKE_AR:FILEPATH=D:/programes/CLion/Mingw/bin/ar.exe
 
-//No help, variable specified on the command line.
-CMAKE_BUILD_TYPE:UNINITIALIZED=Debug
+//Choose the type of build, options are: None Debug Release RelWithDebInfo
+// MinSizeRel ...
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Id string of the compiler for the CodeBlocks IDE. Automatically
 // detected when left empty

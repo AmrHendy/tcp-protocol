@@ -52,7 +52,7 @@ void Server::start_server() {
                          0, (struct sockaddr*)&client_address, sizeof(client_address));
         // send ack with number of packets
         // send the file
-        printf("Finished Client with fd = %d \n",client_socket_fd);
+        printf("Finished Client\n");
     }
 }
 

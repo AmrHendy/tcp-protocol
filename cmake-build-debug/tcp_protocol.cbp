@@ -98,6 +98,15 @@
 		<Unit filename="D:/git/tcp-protocol/File Handler/FileWriter.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
+		<Unit filename="D:/git/tcp-protocol/Packet/Packet.h">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="D:/git/tcp-protocol/Sender/Sender.cpp">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="D:/git/tcp-protocol/Sender/Sender.h">
+			<Option target="tcp_protocol"/>
+		</Unit>
 		<Unit filename="D:/git/tcp-protocol/Server/Server.cpp">
 			<Option target="tcp_protocol"/>
 		</Unit>
