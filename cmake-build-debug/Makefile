@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\E\CLion Problems\tcp-protocol"
+CMAKE_SOURCE_DIR = D:\git\tcp-protocol
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\E\CLion Problems\tcp-protocol\cmake-build-debug"
+CMAKE_BINARY_DIR = D:\git\tcp-protocol\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = "D:\E\CLion Problems\tcp-protocol\cmake-build-debug"
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,7 +69,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -79,9 +79,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\E\CLion Problems\tcp-protocol\cmake-build-debug\CMakeFiles" "D:\E\CLion Problems\tcp-protocol\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\tcp-protocol\cmake-build-debug\CMakeFiles D:\git\tcp-protocol\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\E\CLion Problems\tcp-protocol\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\tcp-protocol\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,32 +149,59 @@ Client/Client.cpp.s:
 	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Client/Client.cpp.s
 .PHONY : Client/Client.cpp.s
 
-File_Handler/FileHandler.obj: File_Handler/FileHandler.cpp.obj
+File_Handler/FileReader.obj: File_Handler/FileReader.cpp.obj
 
-.PHONY : File_Handler/FileHandler.obj
+.PHONY : File_Handler/FileReader.obj
 
 # target to build an object file
-File_Handler/FileHandler.cpp.obj:
-	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.obj
-.PHONY : File_Handler/FileHandler.cpp.obj
+File_Handler/FileReader.cpp.obj:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileReader.cpp.obj
+.PHONY : File_Handler/FileReader.cpp.obj
 
-File_Handler/FileHandler.i: File_Handler/FileHandler.cpp.i
+File_Handler/FileReader.i: File_Handler/FileReader.cpp.i
 
-.PHONY : File_Handler/FileHandler.i
+.PHONY : File_Handler/FileReader.i
 
 # target to preprocess a source file
-File_Handler/FileHandler.cpp.i:
-	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.i
-.PHONY : File_Handler/FileHandler.cpp.i
+File_Handler/FileReader.cpp.i:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileReader.cpp.i
+.PHONY : File_Handler/FileReader.cpp.i
 
-File_Handler/FileHandler.s: File_Handler/FileHandler.cpp.s
+File_Handler/FileReader.s: File_Handler/FileReader.cpp.s
 
-.PHONY : File_Handler/FileHandler.s
+.PHONY : File_Handler/FileReader.s
 
 # target to generate assembly for a file
-File_Handler/FileHandler.cpp.s:
-	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileHandler.cpp.s
-.PHONY : File_Handler/FileHandler.cpp.s
+File_Handler/FileReader.cpp.s:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileReader.cpp.s
+.PHONY : File_Handler/FileReader.cpp.s
+
+File_Handler/FileWriter.obj: File_Handler/FileWriter.cpp.obj
+
+.PHONY : File_Handler/FileWriter.obj
+
+# target to build an object file
+File_Handler/FileWriter.cpp.obj:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileWriter.cpp.obj
+.PHONY : File_Handler/FileWriter.cpp.obj
+
+File_Handler/FileWriter.i: File_Handler/FileWriter.cpp.i
+
+.PHONY : File_Handler/FileWriter.i
+
+# target to preprocess a source file
+File_Handler/FileWriter.cpp.i:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileWriter.cpp.i
+.PHONY : File_Handler/FileWriter.cpp.i
+
+File_Handler/FileWriter.s: File_Handler/FileWriter.cpp.s
+
+.PHONY : File_Handler/FileWriter.s
+
+# target to generate assembly for a file
+File_Handler/FileWriter.cpp.s:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileWriter.cpp.s
+.PHONY : File_Handler/FileWriter.cpp.s
 
 Server/Server.obj: Server/Server.cpp.obj
 
@@ -242,9 +269,12 @@ help:
 	@echo ... Client/Client.obj
 	@echo ... Client/Client.i
 	@echo ... Client/Client.s
-	@echo ... File_Handler/FileHandler.obj
-	@echo ... File_Handler/FileHandler.i
-	@echo ... File_Handler/FileHandler.s
+	@echo ... File_Handler/FileReader.obj
+	@echo ... File_Handler/FileReader.i
+	@echo ... File_Handler/FileReader.s
+	@echo ... File_Handler/FileWriter.obj
+	@echo ... File_Handler/FileWriter.i
+	@echo ... File_Handler/FileWriter.s
 	@echo ... Server/Server.obj
 	@echo ... Server/Server.i
 	@echo ... Server/Server.s

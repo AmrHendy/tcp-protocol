@@ -6,6 +6,36 @@
 
 #IncludeRegexTransform: 
 
+D:/git/tcp-protocol/Client/Client.cpp
+Client.h
+D:/git/tcp-protocol/Client/Client.h
+
+D:/git/tcp-protocol/Client/Client.h
+iostream
+-
+fstream
+-
+cstring
+-
+unistd.h
+-
+cstdio
+-
+cstdlib
+-
+sys/socket.h
+-
+sys/types.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+memory
+-
+ctime
+-
+
 D:/git/tcp-protocol/Server/Server.cpp
 Server.h
 D:/git/tcp-protocol/Server/Server.h
@@ -24,5 +54,9 @@ sys/types.h
 netinet/in.h
 -
 unistd.h
+-
+
+D:/git/tcp-protocol/main.cpp
+iostream
 -
 

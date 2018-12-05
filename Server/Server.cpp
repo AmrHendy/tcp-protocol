@@ -12,10 +12,10 @@ Server::Server(string server_conf_file_dir) {
 
 void Server::init_server() {
     struct sockaddr_in address;
-    address.sin_family = AF_INET;
+    address.sin_family = AF_INET; //IPv$
     // Creating socket file descriptor for the server
-    if ((server_socket_fd = socket(address.sin_family, SOCK_STREAM, 0)) == 0) {
-        perror("socket failed");
+    if ((server_socket_fd = socket(address.sin_family, SOCK_DGRAM, 0)) < 0) {
+        perror("socket creation failed");
         exit(EXIT_FAILURE);
     }
     int opt = 1;
@@ -24,6 +24,10 @@ void Server::init_server() {
         perror("setsockopt Error");
         exit(EXIT_FAILURE);
     }
+    /*
+     * build the server's Internet address
+     */
+    //bzero((char *) &address, sizeof(address));
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = INADDR_ANY;
     address.sin_port = htons(server_port_number);
@@ -36,56 +40,19 @@ void Server::init_server() {
 
 void Server::start_server() {
     init_server();
-    /* start listening on this port */
-    int status = listen(server_socket_fd, SERVER_CONNECTION_QUEUE_SIZE);
-    /* if error happened print it*/
-    if(status){
-        perror("error in listening");
-        exit(EXIT_FAILURE);
-    }
-    printf("Server is waiting for connections\n");
-
-    struct sockaddr_storage client_addr;    /* client address info */
+    printf("Server is waiting for clients\n");
     while(1) {
         /* server main loop */
-        socklen_t sock_size = sizeof(client_addr);
-        int client_socket_fd;                          /* client socket descriptor */
-        client_socket_fd = accept(server_socket_fd, (struct sockaddr *)&client_addr, &sock_size); /* accept connection */
-        if(client_socket_fd == -1){
-            perror("accept error");
-            continue;
-        }
-        if(active_clients == MAX_ALLOWED_CONNECTIONS){
-            printf("Reached the max limit number of connections, So server can't handle that client connection\n")
-            continue;
-        }
-        printf("Successfully Established Connection with a Client has fd = %d \n",client_socket_fd);
-        /*
-         *    handle the connection, by forking a new process.
-         */
-        int pid;
-        // failure with fork so ignore that connection
-        if ((pid = fork()) == -1) {
-            close(client_socket_fd);
-            continue;
-        }
-        // this is the parent process, and the pid represent the child process id
-        else if(pid > 0) {
-            // close the socket in the parent process as it is already copied in the child process
-            close(client_socket_fd);
-            active_clients++;
-            continue;
-        }
-        // this is the new created child process and the process id = getpid()
-        else if(pid == 0) {
-            handle_client(client_socket_fd);
-            close(client_socket_fd);
-            active_clients--;
-            printf("Finished Client with fd = %d \n",client_socket_fd);
-            // to prevent the child of creating new processes
-            exit(0);
-            // or use kill(getpid(), SIGKILL);
-        }
+        printf("Successfully Connected with a Client");
+        struct sockaddr_in client_address;
+        const int MAXSIZE = 5000;
+        char * buffer = (char*) malloc(MAXSIZE);
+        // receive the file name
+        int n = recvfrom(server_socket_fd, buffer, sizeof(buffer),
+                         0, (struct sockaddr*)&client_address, sizeof(client_address));
+        // send ack with number of packets
+        // send the file
+        printf("Finished Client with fd = %d \n",client_socket_fd);
     }
 }
 
