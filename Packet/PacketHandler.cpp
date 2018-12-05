@@ -42,7 +42,7 @@ Ack_Packet PacketHandler::create_ack_packet(uint32_t ackno, uint16_t len){
 uint16_t PacketHandler::calculate_ack_packet_checksum(Ack_Packet packet){
     uint32_t sum = 0;
     sum += packet.len;
-    sum += packet.seqno;
+    sum += packet.ackno;
     // Add the carries
     while (sum >> 16)
         sum = (sum & 0xFFFF) + (sum >> 16);

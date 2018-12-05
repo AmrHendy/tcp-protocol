@@ -25,6 +25,7 @@ using namespace std;
 #include "../Receiver/Receiver.h"
 #include "../File Handler/FileReader.h"
 #include "../Utils/constants.h"
+#include "../Packet/PacketHandler.h"
 
 class Client {
 
