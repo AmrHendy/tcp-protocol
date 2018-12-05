@@ -20,7 +20,9 @@ public:
     explicit Sender(struct sockaddr *socket_addres);
     ~Sender();
 
-    int send_packet(Packet packet, int socket_fd);
+    void send_packet(Packet packet, int socket_fd);
+    void send_ack(Ack_Packet ack_packet, int socket_fd);
+    void send_server_ack(Ack_Server_Packet ack_server_packet, int socket_fd);
 };
 
 
