@@ -8,8 +8,8 @@
 using namespace std;
 
 #include <string>
-#include <cstring>
 #include "../Packet/Packet.h"
+#include "../Packet/PacketHandler.h"
 
 class FileReader {
 

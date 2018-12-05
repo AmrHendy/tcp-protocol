@@ -203,6 +203,33 @@ File_Handler/FileWriter.cpp.s:
 	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileWriter.cpp.s
 .PHONY : File_Handler/FileWriter.cpp.s
 
+Packet/PacketHandler.obj: Packet/PacketHandler.cpp.obj
+
+.PHONY : Packet/PacketHandler.obj
+
+# target to build an object file
+Packet/PacketHandler.cpp.obj:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Packet/PacketHandler.cpp.obj
+.PHONY : Packet/PacketHandler.cpp.obj
+
+Packet/PacketHandler.i: Packet/PacketHandler.cpp.i
+
+.PHONY : Packet/PacketHandler.i
+
+# target to preprocess a source file
+Packet/PacketHandler.cpp.i:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Packet/PacketHandler.cpp.i
+.PHONY : Packet/PacketHandler.cpp.i
+
+Packet/PacketHandler.s: Packet/PacketHandler.cpp.s
+
+.PHONY : Packet/PacketHandler.s
+
+# target to generate assembly for a file
+Packet/PacketHandler.cpp.s:
+	$(MAKE) -f CMakeFiles\tcp_protocol.dir\build.make CMakeFiles/tcp_protocol.dir/Packet/PacketHandler.cpp.s
+.PHONY : Packet/PacketHandler.cpp.s
+
 Receiver/Receiver.obj: Receiver/Receiver.cpp.obj
 
 .PHONY : Receiver/Receiver.obj
@@ -329,6 +356,9 @@ help:
 	@echo ... File_Handler/FileWriter.obj
 	@echo ... File_Handler/FileWriter.i
 	@echo ... File_Handler/FileWriter.s
+	@echo ... Packet/PacketHandler.obj
+	@echo ... Packet/PacketHandler.i
+	@echo ... Packet/PacketHandler.s
 	@echo ... Receiver/Receiver.obj
 	@echo ... Receiver/Receiver.i
 	@echo ... Receiver/Receiver.s

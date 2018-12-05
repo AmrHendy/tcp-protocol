@@ -51,12 +51,7 @@ Packet FileReader::get_chunk_data(int chunk_index) {
     if(bytes_readed != chunk_size && ftell(file) != SEEK_END){
         perror("Reading File Error");
     }
-    Packet packet;
-    strcpy(packet.data, buffer);
-    packet.seqno = chunk_index;
-    packet.len = bytes_readed;
-    // TODO
-    //packet.cksum =
+    Packet packet = PacketHandler::create_packet(buffer, chunk_index, bytes_readed);
     return packet;
 }
 
