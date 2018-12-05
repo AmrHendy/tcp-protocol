@@ -20,6 +20,12 @@ using namespace std;
 #include <memory>
 #include <ctime>
 
+
+#include "../Sender/Sender.h"
+#include "../Receiver/Receiver.h"
+#include "../File Handler/FileReader.h"
+#include "../Utils/constants.h"
+
 class Client {
 
 private:
@@ -34,11 +40,12 @@ public:
     explicit Client(string client_conf_file_dir);
     ~Client();
 
+    void connect_to_server();
+    void receive_file(int strategy_option);
+
 private:
     void init_client_socket();
-    void connect_to_server();
     void send_request_to_server();
-    void receive_file();
 };
 
 

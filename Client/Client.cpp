@@ -14,17 +14,17 @@ Client::Client(string client_conf_file_dir) {
         conf_file >> requested_file_name;
         conf_file >> initial_window_size;
     } else {
-        perror("\nConfiguration File not found !!\n");
+        perror("Configuration File not found !!\n");
         exit(EXIT_FAILURE);
     }
 }
 
 Client::~Client() {
     if (!server_ip_address.empty()) {
-        delete server_ip_address;
+        free(server_ip_address);
     }
     if (!requested_file_name.empty()) {
-        delete requested_file_name;
+        free(requested_file_name);
     }
     free(this);
 }
@@ -44,18 +44,18 @@ void Client::connect_to_server() {
     serv_address.sin_port = htons(client_port_number);
 
     // Convert IPv4 and IPv6 addresses from text to binary form
-    if (inet_pton(AF_INET, server_ip_address, &serv_address.sin_addr) <= 0) {
+    if (inet_pton(AF_INET, server_ip_address, &serv_address.sin_addr) <= 0){
         perror("\nInvalid address/ Address not supported \n");
         exit(EXIT_FAILURE);
     }
-
-    if (connect(sock_fd, (struct sockaddr *) &serv_address, sizeof(serv_address)) < 0) {
+    if (connect(sock_fd, (struct sockaddr *) &serv_address, sizeof(serv_address)) < 0){
         perror("\nConnection Failed \n");
         exit(EXIT_FAILURE);
     }
 }
 
 void Client::send_request_to_server() {
+    /*
     auto *request_buffer = (char *) malloc(1000);
     memset(request_buffer, '\0', sizeof(request_buffer));
 
@@ -74,10 +74,33 @@ void Client::send_request_to_server() {
     if (!request_buffer) {
         free(request_buffer);
     }
+     */
+
+    // send the file name packet
+    Packet packet;
+    memset(packet.data, 0, sizeof(packet.data));
+    for(int i = 0; i < requested_file_name.size(); i++) packet.data[i] = requested_file_name[i];
+    /*
+     *
+     * construct the packet well
+     */
+    Sender sender = Sender(NULL);
+    sender.send_server_ack(packet, sock_fd);
+    /*
+     * wait until receive ack from server
+     */
 }
 
-void Client::receive_file() {
-
+void Client::receive_file(int strategy_option) {
+    send_request_to_server();
+    if (strategy_option == 0) {
+        // stop and wait
+    } else if (strategy_option == 1) {
+        // selective repeat
+    } else {
+        // GBN
+    }
+    printf("Client finished\n");
 }
 
 /* sends buffer of chars over socket */
