@@ -58,3 +58,7 @@ Packet FileReader::get_chunk_data(int chunk_index) {
 bool FileReader::is_finished(){
     return ftell(file) == SEEK_END;
 }
+
+int FileReader::get_total_packet_number(){
+    return ceil(1.0 * get_file_size() / FileReader::chunk_size);
+}

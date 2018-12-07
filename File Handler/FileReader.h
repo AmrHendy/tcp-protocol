@@ -8,6 +8,7 @@
 using namespace std;
 
 #include <string>
+#include <cmath>
 #include "../Packet/Packet.h"
 #include "../Packet/PacketHandler.h"
 
@@ -19,7 +20,7 @@ private:
     int current_chunk_index;
 
 public:
-    explicit FileReader(string file_path, int chunk_size);
+    explicit FileReader(string file_path, int chunk_size=CHUNK_SIZE);
     ~FileReader();
 
     int get_file_size();
@@ -28,6 +29,7 @@ public:
     Packet get_current_chunk_data();
     Packet get_chunk_data(int chunk_index);
     void advance_chunk_pointer();
+    int get_total_packet_number();
 };
 
 

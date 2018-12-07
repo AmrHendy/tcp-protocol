@@ -10,6 +10,7 @@
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include<netinet/in.h>
+#include <ctime>
 
 class Receiver {
 
@@ -18,7 +19,7 @@ public:
     ~Receiver();
 
     static Packet receive_packet(int socket_fd, struct sockaddr *socket_address);
-    static Ack_Packet receive_ack_packet(int socket_fd, struct sockaddr *socket_address);
+    static Ack_Packet receive_ack_packet(int socket_fd, struct sockaddr *socket_address, int& status, int TIMEOUT=1000);
     static Ack_Server_Packet receive_ack_server_packet(int socket_fd, struct sockaddr *socket_address);
 };
 

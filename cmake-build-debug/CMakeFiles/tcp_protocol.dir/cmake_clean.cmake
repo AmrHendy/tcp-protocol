@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/tcp_protocol.dir/Sender/Sender.cpp.obj"
   "CMakeFiles/tcp_protocol.dir/Receiver/Receiver.cpp.obj"
   "CMakeFiles/tcp_protocol.dir/Packet/PacketHandler.cpp.obj"
+  "CMakeFiles/tcp_protocol.dir/Stop_and_Wait/StopAndWait.cpp.obj"
   "tcp_protocol.pdb"
   "tcp_protocol.exe"
   "tcp_protocol.exe.manifest"

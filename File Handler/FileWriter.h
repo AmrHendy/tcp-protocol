@@ -8,6 +8,8 @@
 using namespace std;
 
 #include <string>
+#include "../Packet/Packet.h"
+#include "../Packet/PacketHandler.h"
 
 class FileWriter {
 
@@ -17,7 +19,7 @@ private:
     int current_chunk_index;
 
 public:
-    FileWriter(string file_path, int chunk_size);
+    FileWriter(string file_path, int chunk_size=CHUNK_SIZE);
     ~FileWriter();
 
     void write_chunk(string data);

@@ -16,14 +16,19 @@ Packet Receiver::receive_packet(int socket_fd, struct sockaddr *socket_address) 
 }
 
 // fill the socket address with the sender address
-Ack_Packet Receiver::receive_ack_packet(int socket_fd, struct sockaddr *socket_address) {
-    Ack_Packet ack_packet;
-    int bytes = recvfrom(socket_fd, &ack_packet, sizeof(ack_packet),
-                         0, (struct sockaddr*)socket_address, sizeof(socket_address));
-    if(bytes != sizeof(Ack_Packet)){
-        perror('Not received all the packet data');
+Ack_Packet Receiver::receive_ack_packet(int socket_fd, struct sockaddr *socket_address, int& status, int TIMEOUT) {
+    clock_t begin = clock();
+    while((clock() - begin)/ CLOCKS_PER_SEC < TIMEOUT){
+        Ack_Packet ack_packet;
+        int bytes = recvfrom(socket_fd, &ack_packet, sizeof(ack_packet),
+                             0, (struct sockaddr*)socket_address, sizeof(socket_address));
+        if(bytes > 0){
+            status = 1;
+            return ack_packet;
+        }
     }
-    return ack_packet;
+    status = 0;
+    return Ack_Packet();
 }
 
 // fill the socket address with the sender address

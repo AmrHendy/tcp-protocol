@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/git/tcp-protocol/Receiver/Receiver.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Receiver/Receiver.cpp.obj"
   "D:/git/tcp-protocol/Sender/Sender.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Sender/Sender.cpp.obj"
   "D:/git/tcp-protocol/Server/Server.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Server/Server.cpp.obj"
+  "D:/git/tcp-protocol/Stop and Wait/StopAndWait.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Stop_and_Wait/StopAndWait.cpp.obj"
   "D:/git/tcp-protocol/main.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
