@@ -9,7 +9,8 @@
 #include <sys/types.h>
 #include <arpa/inet.h>
 #include <sys/socket.h>
-#include<netinet/in.h>
+#include <netinet/in.h>
+#include <cstdlib>
 
 class Sender {
 

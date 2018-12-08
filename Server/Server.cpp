@@ -54,7 +54,7 @@ void Server::start_server(int strategy_option) {
         // sending the ack with the number of packets which will be sended
         Sender sender = Sender(client_address);
         Ack_Server_Packet server_ack_packet;
-        server_ack_packet.packets_numbers = number_of_packets
+        server_ack_packet.packets_numbers = number_of_packets;
         sender.send_server_ack(server_ack_packet, server_socket_fd);
         // call the desired method to send the file
         if(strategy_option == 0){

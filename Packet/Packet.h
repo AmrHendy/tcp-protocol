@@ -5,7 +5,7 @@
 #ifndef TCP_PROTOCOL_PACKET_H
 #define TCP_PROTOCOL_PACKET_H
 
-#include <cstdint >
+#include <cstdint>
 #include "../Utils/constants.h"
 
 /* Data-only packets */

@@ -5,7 +5,7 @@
 #include "FileWriter.h"
 
 FileWriter::FileWriter(string file_path, int chunk_size) {
-    FileWriter::file = fopen(file_path, 'wb');
+    FileWriter::file = fopen(file_path.c_str(), "wb");
     FileWriter::chunk_size = chunk_size;
     FileWriter::current_chunk_index = 0;
 }

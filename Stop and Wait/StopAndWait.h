@@ -9,6 +9,7 @@ using namespace std;
 
 #include <string>
 #include <set>
+#include <unistd.h>
 
 #include "../File Handler/FileReader.h"
 #include "../File Handler/FileWriter.h"

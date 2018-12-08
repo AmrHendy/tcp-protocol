@@ -20,12 +20,14 @@ Client::Client(string client_conf_file_dir) {
 }
 
 Client::~Client() {
-    if (!server_ip_address.empty()) {
+    //you don't need to free.
+    // kindly read this https://stackoverflow.com/questions/4979681/how-to-properly-free-a-stdstring-from-memory
+    /*if (!server_ip_address.empty()) {
         free(server_ip_address);
     }
     if (!requested_file_name.empty()) {
         free(requested_file_name);
-    }
+    }*/
     free(this);
 }
 
@@ -44,7 +46,7 @@ void Client::connect_to_server() {
     serv_address.sin_port = htons(client_port_number);
 
     // Convert IPv4 and IPv6 addresses from text to binary form
-    if (inet_pton(AF_INET, server_ip_address, &serv_address.sin_addr) <= 0){
+    if (inet_pton(AF_INET, server_ip_address.c_str(), &serv_address.sin_addr) <= 0){
         perror("\nInvalid address/ Address not supported \n");
         exit(EXIT_FAILURE);
     }

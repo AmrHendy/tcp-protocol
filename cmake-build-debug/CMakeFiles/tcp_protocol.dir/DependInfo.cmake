@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/git/tcp-protocol/Client/Client.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Client/Client.cpp.obj"
-  "D:/git/tcp-protocol/File Handler/FileReader.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/File_Handler/FileReader.cpp.obj"
-  "D:/git/tcp-protocol/File Handler/FileWriter.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/File_Handler/FileWriter.cpp.obj"
-  "D:/git/tcp-protocol/Packet/PacketHandler.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Packet/PacketHandler.cpp.obj"
-  "D:/git/tcp-protocol/Receiver/Receiver.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Receiver/Receiver.cpp.obj"
-  "D:/git/tcp-protocol/Sender/Sender.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Sender/Sender.cpp.obj"
-  "D:/git/tcp-protocol/Server/Server.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Server/Server.cpp.obj"
-  "D:/git/tcp-protocol/Stop and Wait/StopAndWait.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Stop_and_Wait/StopAndWait.cpp.obj"
-  "D:/git/tcp-protocol/main.cpp" "D:/git/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/main.cpp.obj"
+  "/home/arsanuos/projects/tcp-protocol/Client/Client.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Client/Client.cpp.o"
+  "/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/File_Handler/FileReader.cpp.o"
+  "/home/arsanuos/projects/tcp-protocol/File Handler/FileWriter.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/File_Handler/FileWriter.cpp.o"
+  "/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Packet/PacketHandler.cpp.o"
+  "/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Receiver/Receiver.cpp.o"
+  "/home/arsanuos/projects/tcp-protocol/Sender/Sender.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Sender/Sender.cpp.o"
+  "/home/arsanuos/projects/tcp-protocol/Server/Server.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o"
+  "/home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Stop_and_Wait/StopAndWait.cpp.o"
+  "/home/arsanuos/projects/tcp-protocol/main.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

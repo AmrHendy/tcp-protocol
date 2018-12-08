@@ -4,13 +4,14 @@
 
 #include "StopAndWait.h"
 
-StopAndWait::StopAndWait(int socket_fd, string file_name){
+//fileWriter must be intialized in consturctor or remove it from header.
+StopAndWait::StopAndWait(int socket_fd, string file_name): fileReader(file_name), fileWriter(file_name){
     StopAndWait::socket_fd = socket_fd;
     StopAndWait::file_path = file_name;
 }
 
 StopAndWait::~StopAndWait(){
-    free(file_path);
+    //free(file_path);
     close(socket_fd);
     free(this);
 }

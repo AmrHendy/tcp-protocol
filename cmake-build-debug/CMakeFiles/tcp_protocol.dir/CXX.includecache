@@ -6,57 +6,89 @@
 
 #IncludeRegexTransform: 
 
-D:/git/tcp-protocol/Client/Client.cpp
-Client.h
-D:/git/tcp-protocol/Client/Client.h
+/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
+string
+-
+cmath
+-
+../Packet/Packet.h
+/home/arsanuos/projects/tcp-protocol/Packet/Packet.h
+../Packet/PacketHandler.h
+/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
 
-D:/git/tcp-protocol/Client/Client.h
-iostream
+/home/arsanuos/projects/tcp-protocol/File Handler/FileWriter.h
+string
 -
-fstream
+../Packet/Packet.h
+/home/arsanuos/projects/tcp-protocol/Packet/Packet.h
+../Packet/PacketHandler.h
+/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
+
+/home/arsanuos/projects/tcp-protocol/Packet/Packet.h
+cstdint
 -
+../Utils/constants.h
+/home/arsanuos/projects/tcp-protocol/Utils/constants.h
+
+/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
+Packet.h
+/home/arsanuos/projects/tcp-protocol/Packet/Packet.h
 cstring
 -
-unistd.h
--
-cstdio
--
-cstdlib
--
-sys/socket.h
--
+
+/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
+../Packet/Packet.h
+/home/arsanuos/projects/tcp-protocol/Packet/Packet.h
 sys/types.h
--
-netinet/in.h
 -
 arpa/inet.h
 -
-memory
--
-ctime
--
-
-D:/git/tcp-protocol/Server/Server.cpp
-Server.h
-D:/git/tcp-protocol/Server/Server.h
-
-D:/git/tcp-protocol/Server/Server.h
-string
--
-cstdio
--
-iostream
--
 sys/socket.h
--
-sys/types.h
 -
 netinet/in.h
 -
-unistd.h
+ctime
+-
+cstdio
 -
 
-D:/git/tcp-protocol/main.cpp
-iostream
+/home/arsanuos/projects/tcp-protocol/Sender/Sender.h
+../Packet/Packet.h
+/home/arsanuos/projects/tcp-protocol/Packet/Packet.h
+sys/types.h
 -
+arpa/inet.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+cstdlib
+-
+
+/home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.cpp
+StopAndWait.h
+/home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.h
+
+/home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.h
+string
+-
+set
+-
+unistd.h
+-
+../File Handler/FileReader.h
+/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
+../File Handler/FileWriter.h
+/home/arsanuos/projects/tcp-protocol/File Handler/FileWriter.h
+../Sender/Sender.h
+/home/arsanuos/projects/tcp-protocol/Sender/Sender.h
+../Receiver/Receiver.h
+/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
+../Utils/constants.h
+/home/arsanuos/projects/tcp-protocol/Utils/constants.h
+../Packet/PacketHandler.h
+/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
+
+/home/arsanuos/projects/tcp-protocol/Utils/constants.h
 
