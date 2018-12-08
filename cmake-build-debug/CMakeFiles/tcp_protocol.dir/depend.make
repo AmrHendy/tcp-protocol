@@ -38,12 +38,14 @@ CMakeFiles/tcp_protocol.dir/Sender/Sender.cpp.o: ../Sender/Sender.h
 CMakeFiles/tcp_protocol.dir/Sender/Sender.cpp.o: ../Utils/constants.h
 
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../File\ Handler/FileReader.h
+CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../File\ Handler/FileWriter.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Packet/Packet.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Packet/PacketHandler.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Receiver/Receiver.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Sender/Sender.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Server/Server.cpp
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Server/Server.h
+CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Stop\ and\ Wait/StopAndWait.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Utils/constants.h
 
 CMakeFiles/tcp_protocol.dir/Stop_and_Wait/StopAndWait.cpp.o: ../File\ Handler/FileReader.h
@@ -56,5 +58,12 @@ CMakeFiles/tcp_protocol.dir/Stop_and_Wait/StopAndWait.cpp.o: ../Stop\ and\ Wait/
 CMakeFiles/tcp_protocol.dir/Stop_and_Wait/StopAndWait.cpp.o: ../Stop\ and\ Wait/StopAndWait.h
 CMakeFiles/tcp_protocol.dir/Stop_and_Wait/StopAndWait.cpp.o: ../Utils/constants.h
 
-CMakeFiles/tcp_protocol.dir/main.cpp.o: ../main.cpp
+CMakeFiles/tcp_protocol.dir/serverMain.cpp.o: ../File\ Handler/FileReader.h
+CMakeFiles/tcp_protocol.dir/serverMain.cpp.o: ../Packet/Packet.h
+CMakeFiles/tcp_protocol.dir/serverMain.cpp.o: ../Packet/PacketHandler.h
+CMakeFiles/tcp_protocol.dir/serverMain.cpp.o: ../Receiver/Receiver.h
+CMakeFiles/tcp_protocol.dir/serverMain.cpp.o: ../Sender/Sender.h
+CMakeFiles/tcp_protocol.dir/serverMain.cpp.o: ../Server/Server.h
+CMakeFiles/tcp_protocol.dir/serverMain.cpp.o: ../Utils/constants.h
+CMakeFiles/tcp_protocol.dir/serverMain.cpp.o: ../serverMain.cpp
 

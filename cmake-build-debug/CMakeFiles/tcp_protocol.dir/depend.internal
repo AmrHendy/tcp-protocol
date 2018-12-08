@@ -39,12 +39,14 @@ CMakeFiles/tcp_protocol.dir/Sender/Sender.cpp.o
  /home/arsanuos/projects/tcp-protocol/Utils/constants.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o
  /home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
+ /home/arsanuos/projects/tcp-protocol/File Handler/FileWriter.h
  /home/arsanuos/projects/tcp-protocol/Packet/Packet.h
  /home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
  /home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
  /home/arsanuos/projects/tcp-protocol/Sender/Sender.h
  /home/arsanuos/projects/tcp-protocol/Server/Server.cpp
  /home/arsanuos/projects/tcp-protocol/Server/Server.h
+ /home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.h
  /home/arsanuos/projects/tcp-protocol/Utils/constants.h
 CMakeFiles/tcp_protocol.dir/Stop_and_Wait/StopAndWait.cpp.o
  /home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
@@ -56,5 +58,12 @@ CMakeFiles/tcp_protocol.dir/Stop_and_Wait/StopAndWait.cpp.o
  /home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.cpp
  /home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.h
  /home/arsanuos/projects/tcp-protocol/Utils/constants.h
-CMakeFiles/tcp_protocol.dir/main.cpp.o
- /home/arsanuos/projects/tcp-protocol/main.cpp
+CMakeFiles/tcp_protocol.dir/serverMain.cpp.o
+ /home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
+ /home/arsanuos/projects/tcp-protocol/Packet/Packet.h
+ /home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
+ /home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
+ /home/arsanuos/projects/tcp-protocol/Sender/Sender.h
+ /home/arsanuos/projects/tcp-protocol/Server/Server.h
+ /home/arsanuos/projects/tcp-protocol/Utils/constants.h
+ /home/arsanuos/projects/tcp-protocol/serverMain.cpp

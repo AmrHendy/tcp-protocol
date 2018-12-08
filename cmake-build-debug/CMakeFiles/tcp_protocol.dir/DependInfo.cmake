@@ -12,7 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/arsanuos/projects/tcp-protocol/Sender/Sender.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Sender/Sender.cpp.o"
   "/home/arsanuos/projects/tcp-protocol/Server/Server.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o"
   "/home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Stop_and_Wait/StopAndWait.cpp.o"
-  "/home/arsanuos/projects/tcp-protocol/main.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/main.cpp.o"
+  "/home/arsanuos/projects/tcp-protocol/serverMain.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/serverMain.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -4,6 +4,7 @@
 
 #include "Server.h"
 #include "../File Handler/FileReader.h"
+#include "../Stop and Wait/StopAndWait.h"
 
 Server::Server(string server_conf_file_dir) {
     freopen(server_conf_file_dir.c_str(), "r", stdin);
@@ -59,6 +60,9 @@ void Server::start_server(int strategy_option) {
         // call the desired method to send the file
         if(strategy_option == 0){
             // stop and wait
+            //TODO:: Check this Amr.
+            StopAndWait stopAndWait(server_socket_fd, packet.data);
+            stopAndWait.sendFile(packet_loss_prob, random_seed);
         }
         else if(strategy_option == 1){
             // selective repeat

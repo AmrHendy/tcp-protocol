@@ -57,18 +57,18 @@ include CMakeFiles/tcp_protocol.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tcp_protocol.dir/flags.make
 
-CMakeFiles/tcp_protocol.dir/main.cpp.o: CMakeFiles/tcp_protocol.dir/flags.make
-CMakeFiles/tcp_protocol.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tcp_protocol.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tcp_protocol.dir/main.cpp.o -c /home/arsanuos/projects/tcp-protocol/main.cpp
+CMakeFiles/tcp_protocol.dir/serverMain.cpp.o: CMakeFiles/tcp_protocol.dir/flags.make
+CMakeFiles/tcp_protocol.dir/serverMain.cpp.o: ../serverMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tcp_protocol.dir/serverMain.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tcp_protocol.dir/serverMain.cpp.o -c /home/arsanuos/projects/tcp-protocol/serverMain.cpp
 
-CMakeFiles/tcp_protocol.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_protocol.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arsanuos/projects/tcp-protocol/main.cpp > CMakeFiles/tcp_protocol.dir/main.cpp.i
+CMakeFiles/tcp_protocol.dir/serverMain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_protocol.dir/serverMain.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arsanuos/projects/tcp-protocol/serverMain.cpp > CMakeFiles/tcp_protocol.dir/serverMain.cpp.i
 
-CMakeFiles/tcp_protocol.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_protocol.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arsanuos/projects/tcp-protocol/main.cpp -o CMakeFiles/tcp_protocol.dir/main.cpp.s
+CMakeFiles/tcp_protocol.dir/serverMain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_protocol.dir/serverMain.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arsanuos/projects/tcp-protocol/serverMain.cpp -o CMakeFiles/tcp_protocol.dir/serverMain.cpp.s
 
 CMakeFiles/tcp_protocol.dir/Client/Client.cpp.o: CMakeFiles/tcp_protocol.dir/flags.make
 CMakeFiles/tcp_protocol.dir/Client/Client.cpp.o: ../Client/Client.cpp
@@ -176,7 +176,7 @@ CMakeFiles/tcp_protocol.dir/Stop_and_Wait/StopAndWait.cpp.s: cmake_force
 
 # Object files for target tcp_protocol
 tcp_protocol_OBJECTS = \
-"CMakeFiles/tcp_protocol.dir/main.cpp.o" \
+"CMakeFiles/tcp_protocol.dir/serverMain.cpp.o" \
 "CMakeFiles/tcp_protocol.dir/Client/Client.cpp.o" \
 "CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o" \
 "CMakeFiles/tcp_protocol.dir/File_Handler/FileReader.cpp.o" \
@@ -189,7 +189,7 @@ tcp_protocol_OBJECTS = \
 # External object files for target tcp_protocol
 tcp_protocol_EXTERNAL_OBJECTS =
 
-tcp_protocol: CMakeFiles/tcp_protocol.dir/main.cpp.o
+tcp_protocol: CMakeFiles/tcp_protocol.dir/serverMain.cpp.o
 tcp_protocol: CMakeFiles/tcp_protocol.dir/Client/Client.cpp.o
 tcp_protocol: CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o
 tcp_protocol: CMakeFiles/tcp_protocol.dir/File_Handler/FileReader.cpp.o

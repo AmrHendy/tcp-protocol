@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tcp_protocol.dir/main.cpp.o"
+  "CMakeFiles/tcp_protocol.dir/serverMain.cpp.o"
   "CMakeFiles/tcp_protocol.dir/Client/Client.cpp.o"
   "CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o"
   "CMakeFiles/tcp_protocol.dir/File_Handler/FileReader.cpp.o"

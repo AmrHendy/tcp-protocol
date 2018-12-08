@@ -339,32 +339,32 @@ Stop_and_Wait/StopAndWait.cpp.s:
 	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/Stop_and_Wait/StopAndWait.cpp.s
 .PHONY : Stop_and_Wait/StopAndWait.cpp.s
 
-main.o: main.cpp.o
+serverMain.o: serverMain.cpp.o
 
-.PHONY : main.o
+.PHONY : serverMain.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/main.cpp.o
-.PHONY : main.cpp.o
+serverMain.cpp.o:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/serverMain.cpp.o
+.PHONY : serverMain.cpp.o
 
-main.i: main.cpp.i
+serverMain.i: serverMain.cpp.i
 
-.PHONY : main.i
+.PHONY : serverMain.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/main.cpp.i
-.PHONY : main.cpp.i
+serverMain.cpp.i:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/serverMain.cpp.i
+.PHONY : serverMain.cpp.i
 
-main.s: main.cpp.s
+serverMain.s: serverMain.cpp.s
 
-.PHONY : main.s
+.PHONY : serverMain.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/main.cpp.s
-.PHONY : main.cpp.s
+serverMain.cpp.s:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/serverMain.cpp.s
+.PHONY : serverMain.cpp.s
 
 # Help Target
 help:
@@ -399,9 +399,9 @@ help:
 	@echo "... Stop_and_Wait/StopAndWait.o"
 	@echo "... Stop_and_Wait/StopAndWait.i"
 	@echo "... Stop_and_Wait/StopAndWait.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... serverMain.o"
+	@echo "... serverMain.i"
+	@echo "... serverMain.s"
 .PHONY : help
 
 

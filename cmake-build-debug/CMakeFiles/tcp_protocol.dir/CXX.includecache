@@ -66,9 +66,37 @@ netinet/in.h
 cstdlib
 -
 
-/home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.cpp
-StopAndWait.h
+/home/arsanuos/projects/tcp-protocol/Server/Server.cpp
+Server.h
+/home/arsanuos/projects/tcp-protocol/Server/Server.h
+../File Handler/FileReader.h
+/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
+../Stop and Wait/StopAndWait.h
 /home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.h
+
+/home/arsanuos/projects/tcp-protocol/Server/Server.h
+string
+-
+cstdio
+-
+iostream
+-
+sys/socket.h
+-
+sys/types.h
+-
+netinet/in.h
+-
+unistd.h
+-
+../Sender/Sender.h
+/home/arsanuos/projects/tcp-protocol/Sender/Sender.h
+../Receiver/Receiver.h
+/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
+../File Handler/FileReader.h
+/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
+../Utils/constants.h
+/home/arsanuos/projects/tcp-protocol/Utils/constants.h
 
 /home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.h
 string

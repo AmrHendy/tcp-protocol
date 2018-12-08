@@ -32,7 +32,6 @@ private:
 
 public:
     explicit Server(string server_conf_file_dir);
-    ~Server();
     void start_server(int strategy_option);
 
 private:
