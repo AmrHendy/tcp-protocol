@@ -11,37 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e941454f-6537-4061-8541-34ff4f1a638b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SR/SR_Receiver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SR/SR_Receiver.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SR/SR_Receiver.h" beforeDir="false" afterPath="$PROJECT_DIR$/SR/SR_Receiver.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SR/SR_Sender.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SR/SR_Sender.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SR/SR_Sender.h" beforeDir="false" afterPath="$PROJECT_DIR$/SR/SR_Sender.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Server.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_protocol.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_protocol.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_protocol.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_protocol.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_protocol.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_protocol.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_protocol.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_protocol.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_protocol.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stop and Wait/StopAndWait.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Stop and Wait/StopAndWait.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,28 +40,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="8553" />
-          <entry key="h" value="3367" />
+          <entry key="cpp" value="8896" />
+          <entry key="h" value="3425" />
           <entry key="txt" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="56" />
-          <entry key="ObjectiveC" value="11920" />
+          <entry key="ObjectiveC" value="12321" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cmake" value="1" />
-          <entry key="cpp" value="29" />
-          <entry key="h" value="29" />
+          <entry key="cpp" value="31" />
+          <entry key="h" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="1" />
-          <entry key="ObjectiveC" value="58" />
+          <entry key="ObjectiveC" value="62" />
         </counts>
       </usages-collector>
     </session>
@@ -137,8 +110,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SR/SR_Sender.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="-17">
+              <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SR/SR_Receiver.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SR/SR_Receiver.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/File Handler/FileWriter.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/File Handler/FileWriter.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -146,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Stop and Wait/StopAndWait.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+            <state relative-caret-position="204">
+              <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -155,17 +164,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Stop and Wait/StopAndWait.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SR/SR_Sender.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            <state relative-caret-position="269">
+              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -173,8 +182,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Receiver/Receiver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="22" column="86" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="86" />
+            <state relative-caret-position="150">
+              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -215,7 +224,6 @@
         <option value="$PROJECT_DIR$/Client/Client.cpp" />
         <option value="$PROJECT_DIR$/Receiver/Receiver.h" />
         <option value="$PROJECT_DIR$/Receiver/Receiver.cpp" />
-        <option value="$PROJECT_DIR$/Stop and Wait/StopAndWait.cpp" />
         <option value="$PROJECT_DIR$/Stop and Wait/StopAndWait.h" />
         <option value="$PROJECT_DIR$/serverMain.cpp" />
         <option value="$PROJECT_DIR$/clientMain.cpp" />
@@ -225,7 +233,10 @@
         <option value="$PROJECT_DIR$/Server/Server.h" />
         <option value="$PROJECT_DIR$/Server/Server.cpp" />
         <option value="$PROJECT_DIR$/SR/SR_Sender.h" />
+        <option value="$PROJECT_DIR$/Stop and Wait/StopAndWait.cpp" />
         <option value="$PROJECT_DIR$/SR/SR_Sender.cpp" />
+        <option value="$PROJECT_DIR$/SR/SR_Receiver.cpp" />
+        <option value="$PROJECT_DIR$/SR/SR_Receiver.h" />
       </list>
     </option>
   </component>
@@ -260,6 +271,11 @@
             <path>
               <item name="tcp_protocol" type="b2602c69:ProjectViewProjectNode" />
               <item name="tcp-protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="File Handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tcp_protocol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tcp-protocol" type="462c0819:PsiDirectoryNode" />
               <item name="Packet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -271,6 +287,11 @@
               <item name="tcp_protocol" type="b2602c69:ProjectViewProjectNode" />
               <item name="tcp-protocol" type="462c0819:PsiDirectoryNode" />
               <item name="Sender" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tcp_protocol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tcp-protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="SR" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tcp_protocol" type="b2602c69:ProjectViewProjectNode" />
@@ -339,12 +360,12 @@
       <workItem from="1544232913214" duration="3000" />
       <workItem from="1544256103731" duration="2655000" />
       <workItem from="1544260771252" duration="3322000" />
-      <workItem from="1544284960104" duration="7024000" />
+      <workItem from="1544284960104" duration="9386000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50495000" />
+    <option name="totallyTimeSpent" value="52857000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -407,13 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/File Handler/FileWriter.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/constants.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -453,13 +467,6 @@
       </provider>
     </entry>
     <entry file="file:///usr/include/x86_64-linux-gnu/sys/socket.h" />
-    <entry file="file://$PROJECT_DIR$/File Handler/FileWriter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Receiver/Receiver.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -553,12 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SR/SR_Receiver.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SR/SR_Receiver.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Packet/PacketHandler.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -575,36 +576,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Receiver/Receiver.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="22" column="86" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SR/SR_Sender.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="150">
+          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Stop and Wait/StopAndWait.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        <state relative-caret-position="204">
+          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/File Handler/FileWriter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/File Handler/FileWriter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Stop and Wait/StopAndWait.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SR/SR_Sender.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SR/SR_Sender.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        <state relative-caret-position="269">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SR/SR_Receiver.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SR/SR_Receiver.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>

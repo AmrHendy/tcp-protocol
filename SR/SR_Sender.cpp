@@ -21,6 +21,13 @@ SR_Sender::SR_Sender(int socket_fd, string file_name, double loss_prob, int seed
     end_window_packet = 0;
 }
 
+SR_Sender::~SR_Sender(){
+    ~thread(sender_thread);
+    ~thread(receiver_thread);
+    free(mtx);
+    free(this);
+}
+
 void SR_Sender::sendFile(){
     sender_thread = thread(send_handling);
     receiver_thread = thread(recev_ack_handling);
