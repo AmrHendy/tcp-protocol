@@ -60,7 +60,6 @@ void Server::start_server(int strategy_option) {
         // call the desired method to send the file
         if(strategy_option == 0){
             // stop and wait
-            //TODO:: Check this Amr.
             StopAndWait stopAndWait(server_socket_fd, packet.data);
             stopAndWait.sendFile(packet_loss_prob, random_seed);
         }

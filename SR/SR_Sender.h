@@ -1,31 +1,58 @@
 //
-// Created by lenovo pc on 04/12/2018.
+// Created by Amr Hendy on 08/12/2018.
 //
 
 #ifndef TCP_PROTOCOL_SR_SENDER_H
 #define TCP_PROTOCOL_SR_SENDER_H
 
+using namespace std;
+
 #include <vector>
-#include "../packet.h"
-#include "../ack_packet.h"
-#include "../File Handler/FileHandler.h"
+#include <thread>
+#include <mutex>
+#include <map>
+
+#include "../File Handler/FileReader.h"
+#include "../Sender/Sender.h"
+#include "../Receiver/Receiver.h"
+#include "../Utils/constants.h"
+#include "../Packet/PacketHandler.h"
 
 class SR_Sender {
 private:
-    int base = 0;
-    int next_seq_num = 0;
-    int threshold = 10;
+    // socket fd
+    int socket_fd;
+    string file_path;
+    set<int> loss_packets_indices;
+    vector<int> window_changes;
+    // window
     int cwnd = 1;
-    double fraction = 0;
-    int received;
-    FileHandler file_handler;
-    vector<packet> window;
-    vector<bool> acked;
-    int client_fd;
+    map<int, pair<Packet, clock_t>> window;
+    map<int, Ack_Packet> acked;
+    int start_window_packet;
+    int end_window_packet;
+    // window handling
+    int threshold = 10;
+    int additive_increase = 1;
+    int multiplicative_decrease = 2;
+    // helpers
+    Sender sender;
+    FileReader reader;
+    // threads and mutex
+    thread sender_thread;
+    thread receiver_thread;
+    mutex mtx;
+
 public:
-    SR_Sender(FileHandler file_handler, int client_fd);
-    void start();
-    void rcv_ack(int seq_num);
+    explicit SR_Sender(int socket_fd, string file_name, double loss_prob, int seed_number, vector<int> window_changes);
+    ~SR_Sender();
+
+    void sendFile();
+
+private:
+    void get_loss_packets(double loss_prob, int seed_number);
+    void send_handling();
+    void recev_ack_handling();
 };
 
 

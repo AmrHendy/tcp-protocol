@@ -1,3 +1,4 @@
+ToolSet: 5.0@D:\programes\CLion\Mingw
 Options: 
 
 Options:
