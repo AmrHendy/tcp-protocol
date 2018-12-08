@@ -4,13 +4,11 @@
 
 #include "SR_Sender.h"
 
-SR_Sender::SR_Sender(int socket_fd, string file_name, double loss_prob, int seed_number, vector<int> window_changes){
+SR_Sender::SR_Sender(int socket_fd, string file_name, double loss_prob, int seed_number, vector<int> window_changes): sender(NULL), reader(file_path){
     SR_Sender::socket_fd = socket_fd;
     SR_Sender::file_path = file_name;
     SR_Sender::window_changes = window_changes;
-    sender = Sender(NULL);
-    reader = FileReader(file_path);
-    loss_packets_indices = get_loss_packets(loss_prob, seed_number);
+    get_loss_packets(loss_prob, seed_number);
     cwnd = 1;
     threshold = 10;
     additive_increase = 1;
@@ -21,16 +19,9 @@ SR_Sender::SR_Sender(int socket_fd, string file_name, double loss_prob, int seed
     end_window_packet = 0;
 }
 
-SR_Sender::~SR_Sender(){
-    ~thread(sender_thread);
-    ~thread(receiver_thread);
-    free(mtx);
-    free(this);
-}
-
 void SR_Sender::sendFile(){
-    sender_thread = thread(send_handling);
-    receiver_thread = thread(recev_ack_handling);
+    sender_thread = std::thread (&SR_Sender::send_handling, this);
+    receiver_thread  = std::thread (&SR_Sender::recev_ack_handling, this);
 }
 
 void SR_Sender::send_handling(){
@@ -39,12 +30,12 @@ void SR_Sender::send_handling(){
     int window_congestion_index = 0;
     while(start_window_packet < total_packets){
         for(int index = start_window_packet; index <= end_window_packet; index++){
-            mtx.lock()
+            mtx.lock();
             if(window.find(index) == window.end()){
-                Packet packet = fileReader.get_chunk_data(index);
+                Packet packet = reader.get_chunk_data(index);
                 // loss
                 if(loss_packets_indices.count(index)){
-                    loss_packets_indices.erase(packet_index);
+                    loss_packets_indices.erase(index);
                     clock_t start_time = clock();
                     window[index] = {packet, start_time};
                 }
@@ -52,10 +43,10 @@ void SR_Sender::send_handling(){
                     // TODO handle congestion control loss
                     sended = 0;
                     window_congestion_index++;
-                    cwnd = max(floor(1.0 * cwnd / multiplicative_decrease), 1);
+                    cwnd = max((int)floor(1.0 * cwnd / multiplicative_decrease), 1);
                     start_window_packet = start_window_packet;
                     end_window_packet = start_window_packet + cwnd - 1;
-                    break
+                    break;
                 }
                 else{
                     sender.send_packet(packet, socket_fd);
@@ -66,7 +57,7 @@ void SR_Sender::send_handling(){
             }
             if(acked.find(index) == acked.end()){
                 clock_t time_now = clock();
-                if((time_now - window[index].second)/ CLOCKS_PER_SEC >= TIMEOUT){
+                if((time_now - window[index].second)/ CLOCKS_PER_SEC >= SR_TIMEOUT){
                     // TODO handle timeout
                     window.clear();
                     acked.clear();
@@ -76,23 +67,24 @@ void SR_Sender::send_handling(){
                     break;
                 }
             }
-            mtx.unlock()
+            mtx.unlock();
         }
     }
 }
 
 
 void SR_Sender::recev_ack_handling(){
+    int total_packets = reader.get_total_packet_number();
     while(start_window_packet < total_packets){
         struct sockaddr *socket_address;
         int status;
         Ack_Packet ack_packet = Receiver::receive_ack_packet(socket_fd, socket_address, status);
         if(status == 1){
             mtx.lock();
-            if(PacketHandler::compare_ack_packet_checksum(ack_packet) && window[ack_packet.ackno] != window.end()){
+            if(PacketHandler::compare_ack_packet_checksum(ack_packet) && window.find(ack_packet.ackno) != window.end()){
                 acked[ack_packet.ackno] = ack_packet;
                 int idx = start_window_packet;
-                while(idx <= end_window_packet && acked[idx] != acked.end()){
+                while(idx <= end_window_packet && acked.find(idx) != acked.end()){
                     start_window_packet++;
                 }
                 // TODO what is threshold ,, how it works with cwnd ??
@@ -112,7 +104,7 @@ void SR_Sender::recev_ack_handling(){
 
 void SR_Sender::get_loss_packets(double loss_prob, int seed_number){
     srand(seed_number);
-    int total_packets = fileReader.get_total_packet_number();
+    int total_packets = reader.get_total_packet_number();
     int total_loss_packets = ceil(loss_prob * total_packets);
     set<int> loss_packets_indices;
     for(int i = 0; i < total_loss_packets; i++){

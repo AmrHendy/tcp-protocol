@@ -117,6 +117,18 @@
 		<Unit filename="/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
+		<Unit filename="/home/arsanuos/projects/tcp-protocol/SR/SR_Receiver.cpp">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="/home/arsanuos/projects/tcp-protocol/SR/SR_Receiver.h">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="/home/arsanuos/projects/tcp-protocol/SR/SR_Sender.cpp">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="/home/arsanuos/projects/tcp-protocol/SR/SR_Sender.h">
+			<Option target="tcp_protocol"/>
+		</Unit>
 		<Unit filename="/home/arsanuos/projects/tcp-protocol/Sender/Sender.cpp">
 			<Option target="tcp_protocol"/>
 		</Unit>

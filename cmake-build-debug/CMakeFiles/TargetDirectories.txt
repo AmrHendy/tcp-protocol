@@ -1,0 +1,3 @@
+/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir

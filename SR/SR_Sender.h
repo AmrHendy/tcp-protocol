@@ -5,18 +5,20 @@
 #ifndef TCP_PROTOCOL_SR_SENDER_H
 #define TCP_PROTOCOL_SR_SENDER_H
 
-using namespace std;
 
 #include <vector>
 #include <thread>
 #include <mutex>
 #include <map>
+#include <set>
 
 #include "../File Handler/FileReader.h"
 #include "../Sender/Sender.h"
 #include "../Receiver/Receiver.h"
 #include "../Utils/constants.h"
 #include "../Packet/PacketHandler.h"
+
+using namespace std;
 
 class SR_Sender {
 private:
@@ -45,7 +47,6 @@ private:
 
 public:
     explicit SR_Sender(int socket_fd, string file_name, double loss_prob, int seed_number, vector<int> window_changes);
-    ~SR_Sender();
 
     void sendFile();
 

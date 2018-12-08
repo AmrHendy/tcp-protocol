@@ -258,6 +258,60 @@ Receiver/Receiver.cpp.s:
 	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/Receiver/Receiver.cpp.s
 .PHONY : Receiver/Receiver.cpp.s
 
+SR/SR_Receiver.o: SR/SR_Receiver.cpp.o
+
+.PHONY : SR/SR_Receiver.o
+
+# target to build an object file
+SR/SR_Receiver.cpp.o:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.o
+.PHONY : SR/SR_Receiver.cpp.o
+
+SR/SR_Receiver.i: SR/SR_Receiver.cpp.i
+
+.PHONY : SR/SR_Receiver.i
+
+# target to preprocess a source file
+SR/SR_Receiver.cpp.i:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.i
+.PHONY : SR/SR_Receiver.cpp.i
+
+SR/SR_Receiver.s: SR/SR_Receiver.cpp.s
+
+.PHONY : SR/SR_Receiver.s
+
+# target to generate assembly for a file
+SR/SR_Receiver.cpp.s:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.s
+.PHONY : SR/SR_Receiver.cpp.s
+
+SR/SR_Sender.o: SR/SR_Sender.cpp.o
+
+.PHONY : SR/SR_Sender.o
+
+# target to build an object file
+SR/SR_Sender.cpp.o:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.o
+.PHONY : SR/SR_Sender.cpp.o
+
+SR/SR_Sender.i: SR/SR_Sender.cpp.i
+
+.PHONY : SR/SR_Sender.i
+
+# target to preprocess a source file
+SR/SR_Sender.cpp.i:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.i
+.PHONY : SR/SR_Sender.cpp.i
+
+SR/SR_Sender.s: SR/SR_Sender.cpp.s
+
+.PHONY : SR/SR_Sender.s
+
+# target to generate assembly for a file
+SR/SR_Sender.cpp.s:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.s
+.PHONY : SR/SR_Sender.cpp.s
+
 Sender/Sender.o: Sender/Sender.cpp.o
 
 .PHONY : Sender/Sender.o
@@ -390,6 +444,12 @@ help:
 	@echo "... Receiver/Receiver.o"
 	@echo "... Receiver/Receiver.i"
 	@echo "... Receiver/Receiver.s"
+	@echo "... SR/SR_Receiver.o"
+	@echo "... SR/SR_Receiver.i"
+	@echo "... SR/SR_Receiver.s"
+	@echo "... SR/SR_Sender.o"
+	@echo "... SR/SR_Sender.i"
+	@echo "... SR/SR_Sender.s"
 	@echo "... Sender/Sender.o"
 	@echo "... Sender/Sender.i"
 	@echo "... Sender/Sender.s"

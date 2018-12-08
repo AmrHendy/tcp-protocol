@@ -35,7 +35,6 @@ private:
 
 public:
     explicit SR_Receiver(int socket_fd, string file_path, int total_packets);
-    ~SR_Receiver();
 
     void recevFile();
 
