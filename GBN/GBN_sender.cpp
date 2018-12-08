@@ -4,21 +4,24 @@
 #include "GBN_sender.h"
 
 
-GBN::GBN(FileHandler file_handler, int client_fd) : file_handler(file_handler) {
+GBN::GBN(FileWriter fileWriter, FileReader fileReader, int client_fd, int N, double PLP) : fileReader(fileReader), fileWriter(fileWriter) {
     this->client_fd = client_fd;
+    this.N = N;
+    this->PLP = PLP;
     sentpkt.resize(N);
 }
 
 
 void GBN::start() {
     bool sent = true;
-    packet pkt;
+    Packet pkt;
     while (1) {
-        if (!file_handler.can_read()) {
+        if (fileReader.is_finished()) {
             break;
         }
         if (sent) {
-            pkt.data = file_handler.get_current_chunk_data();
+            //TODO:: how to know seq number.
+            pkt.data = fileReader.get_current_chunk_data();
             pkt.len = pkt.data.length() + 2 + 4; /* len = 2 , seqno = 4*/
             pkt.seqno = this->next_seq_num;
         }
@@ -55,7 +58,7 @@ bool GBN::check_timeout() {
 }
 
 
-bool GBN::gbn_send(packet pkt) {
+bool GBN::gbn_send(Packet pkt) {
     if (next_seq_num < base + N) {
         sentpkt[next_seq_num] = pkt;
         send_pkt(client_fd, pkt);
@@ -70,6 +73,7 @@ bool GBN::gbn_send(packet pkt) {
 
 void GBN::time_out() {
     if (check_timeout()) {
+        N = 1;
         resend_all();
     }
 }
@@ -83,7 +87,7 @@ void GBN::resend_all() {
 }
 
 void GBN::gbn_recv() {
-    ack_packet pkt = recv_ack_pkt(client_fd);
+    Ack_Packet pkt = recv_ack_pkt(client_fd);
     if (!is_corrupt(pkt.cksum)) {
         base = pkt.ackno + 1;
         if (base == next_seq_num) {

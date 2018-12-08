@@ -6,20 +6,22 @@
 #define TCP_PROTOCOL_GBN_RECEIVER_H
 
 #include "helper.h"
-#include "../File Handler/FileHandler.h"
+#include "../File Handler/FileReader.h"
+#include "../File Handler/FileWriter.h"
 
 class GBN_receiver {
 
     private:
         int fd;
         int expected_seq;
-        FileHandler file_handler;
+        FileReader fileReader;
+        FileWriter fileWriter;
 
     public:
-        GBN_receiver(FileHandler file_handler);
+        GBN_receiver(FileWriter fileWriter, FileReader fileReader);
         void start();
-        bool is_corrupt(packet pkt);
-        bool is_expected(packet pkt);
+        bool is_corrupt(Packet pkt);
+        bool is_expected(Packet pkt);
 };
 
 

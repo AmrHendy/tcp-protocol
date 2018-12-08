@@ -5,7 +5,8 @@
 #ifndef TCP_PROTOCOL_GBN_H
 #define TCP_PROTOCOL_GBN_H
 
-#include "../File Handler/FileHandler.h"
+#include "../File Handler/FileReader.h"
+#include "../File Handler/FileWriter.h"
 #include "helper.h"
 
 #include <bits/stdc++.h>
@@ -28,11 +29,14 @@ private:
     int next_seq_num = 0;
     clock_t timer = 0;
     double threshold = 10;/* threshold of timeout 10 seconds.*/
-    FileHandler file_handler;
+    //FileHandler file_handler;
+    FileReader fileReader;
+    FileWriter fileWriter;
     int N;
     int sentPackets;
-    vector<packet> sentpkt;
+    vector<Packet> sentpkt;
     int client_fd;
+    double PLP;
 
     bool is_corrupt(uint16_t cksum);
 
@@ -47,15 +51,17 @@ private:
     void stop_timer();
 
 public:
-    GBN(FileHandler file_handler, int client_fd);
+    GBN(FileWriter fileWriter, FileReader fileReader, int client_fd, int N, double PLP);
 
     void start();
 
-    void gbn_recv(ack_packet pkt);
+    void gbn_recv(Ack_Packet pkt);
 
     void data_listener();
 
     void gbn_recv();
+
+    bool gbn_send(Packet pkt);
 
 
 };

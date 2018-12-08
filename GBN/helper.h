@@ -10,14 +10,13 @@
 #include <stdint.h>
 #include <string>
 
-#include "../ack_packet.h"
-#include "../packet.h"
+#include "../Packet/Packet.h"
 
 using namespace std;
 
-packet recv_pkt(int client_fd);
+Packet recv_pkt(int client_fd);
 
-ack_packet recv_ack_pkt(int client_fd);
+Ack_Packet recv_ack_pkt(int client_fd);
 
 string get_data(int client_fd, uint16_t size);
 
@@ -27,11 +26,11 @@ string get_data(int client_fd, uint16_t size);
 
 uint32_t get_seq_num(int client_fd);
 
-bool send_pkt(int fd, packet pkt);
+bool send_pkt(int fd, Packet pkt);
 
 bool send_all(int fd, void *data, uint16_t len);
 
-bool send_ack(int fd, ack_packet pkt);
+bool send_ack(int fd, Ack_Packet pkt);
 
 
 #endif //TCP_PROTOCOL_HELPER_H

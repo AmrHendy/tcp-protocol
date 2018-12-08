@@ -5,16 +5,16 @@
 #include "helper.h"
 
 
-packet recv_pkt(int client_fd) {
-    packet pkt;
+Packet recv_pkt(int client_fd) {
+    Packet pkt;
     pkt.len = get_len(client_fd);
     pkt.seqno = get_seq_num(client_fd);
     pkt.data = get_data(client_fd, pkt.len);
     return pkt;
 }
 
-ack_packet recv_ack_pkt(int client_fd) {
-    ack_packet pkt;
+Ack_Packet recv_ack_pkt(int client_fd) {
+    Ack_Packet pkt;
     pkt.len = get_len(client_fd);
     pkt.ackno = get_seq_num(client_fd);
     return pkt;
@@ -74,7 +74,7 @@ string get_data(int client_fd, uint16_t size) {
     return s;
 }
 
-bool send_pkt(int fd, packet pkt) {
+bool send_pkt(int fd, Packet pkt) {
     uint16_t len = pkt.len;
     //send length.
     //send seq number.
@@ -97,6 +97,6 @@ bool send_all(int fd, void *data, uint16_t len) {
 }
 
 
-bool send_ack(int fd, ack_packet pkt) {
+bool send_ack(int fd, Ack_Packet pkt) {
     return send_all(fd, (void *) pkt.len, 2) && send_all(fd, (void *) pkt.ackno, 4);
 }
