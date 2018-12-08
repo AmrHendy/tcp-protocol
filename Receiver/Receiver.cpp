@@ -13,9 +13,12 @@ Packet Receiver::receive_packet(int socket_fd, struct sockaddr *socket_address) 
     //A test needed.
     int bytes = recvfrom(socket_fd, &packet, sizeof(packet),
                      0, (struct sockaddr *) &socket_address, &addrlen);
-    if(bytes != sizeof(Packet)){
-        std::perror("Not received all the packet data");
+    if(bytes != sizeof(Packet) || bytes <= 0){
+        perror("Not received all the packet data");
+        //status = 0;
+        //return Packet();
     }
+    //status = 1;
     return packet;
 }
 

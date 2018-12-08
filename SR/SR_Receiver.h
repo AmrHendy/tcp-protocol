@@ -28,6 +28,7 @@ private:
     map<int, Packet> received;
     int start_window_packet;
     int end_window_packet;
+    int total_packets;
     // helpers
     Sender sender;
     FileWriter writer;

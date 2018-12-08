@@ -10,11 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e941454f-6537-4061-8541-34ff4f1a638b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Receiver/Receiver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Receiver/Receiver.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SR/SR_Receiver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SR/SR_Receiver.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SR/SR_Receiver.h" beforeDir="false" afterPath="$PROJECT_DIR$/SR/SR_Receiver.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SR/SR_Sender.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SR/SR_Sender.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stop and Wait/StopAndWait.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Stop and Wait/StopAndWait.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,15 +38,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="8896" />
-          <entry key="h" value="3425" />
+          <entry key="cpp" value="9672" />
+          <entry key="h" value="3431" />
           <entry key="txt" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="56" />
-          <entry key="ObjectiveC" value="12321" />
+          <entry key="ObjectiveC" value="13103" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -116,20 +114,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SR/SR_Receiver.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="235">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SR/SR_Receiver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="204">
+              <caret line="51" column="61" lean-forward="true" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -182,8 +180,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Receiver/Receiver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="272">
+              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -223,7 +221,6 @@
         <option value="$PROJECT_DIR$/Sender/Sender.h" />
         <option value="$PROJECT_DIR$/Client/Client.cpp" />
         <option value="$PROJECT_DIR$/Receiver/Receiver.h" />
-        <option value="$PROJECT_DIR$/Receiver/Receiver.cpp" />
         <option value="$PROJECT_DIR$/Stop and Wait/StopAndWait.h" />
         <option value="$PROJECT_DIR$/serverMain.cpp" />
         <option value="$PROJECT_DIR$/clientMain.cpp" />
@@ -235,8 +232,9 @@
         <option value="$PROJECT_DIR$/SR/SR_Sender.h" />
         <option value="$PROJECT_DIR$/Stop and Wait/StopAndWait.cpp" />
         <option value="$PROJECT_DIR$/SR/SR_Sender.cpp" />
-        <option value="$PROJECT_DIR$/SR/SR_Receiver.cpp" />
         <option value="$PROJECT_DIR$/SR/SR_Receiver.h" />
+        <option value="$PROJECT_DIR$/Receiver/Receiver.cpp" />
+        <option value="$PROJECT_DIR$/SR/SR_Receiver.cpp" />
       </list>
     </option>
   </component>
@@ -360,12 +358,12 @@
       <workItem from="1544232913214" duration="3000" />
       <workItem from="1544256103731" duration="2655000" />
       <workItem from="1544260771252" duration="3322000" />
-      <workItem from="1544284960104" duration="9386000" />
+      <workItem from="1544284960104" duration="10843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52857000" />
+    <option name="totallyTimeSpent" value="54314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -574,13 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Receiver/Receiver.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Stop and Wait/StopAndWait.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -616,6 +607,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Receiver/Receiver.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SR/SR_Sender.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
@@ -623,17 +621,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SR/SR_Receiver.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SR/SR_Receiver.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SR/SR_Receiver.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="51" column="61" lean-forward="true" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
         </state>
       </provider>
     </entry>
