@@ -9,7 +9,7 @@ map<int, Packet> received;
 int start_window_packet;
 int end_window_packet;
 
-SR_Receiver::SR_Receiver(int socket_fd, string file_path, int total_packets): writer(file_path), sender(NULL){
+SR_Receiver::SR_Receiver(int socket_fd, string file_path, int total_packets): writer(file_path), sender(){
     SR_Receiver::socket_fd = socket_fd;
     SR_Receiver::file_path = file_path;
     received.clear();

@@ -23,9 +23,8 @@ class StopAndWait {
 
 public:
     explicit StopAndWait(int socket_fd, string file_name);
-    ~StopAndWait();
 
-    void sendFile(double loss_prob, int seed_number);
+    void sendFile(double loss_prob, int seed_number, struct sockaddr_in client_address);
     void recevFile(int total_packets);
 
 private:
@@ -36,8 +35,8 @@ private:
     FileWriter fileWriter;
 
     void get_loss_packets(double loss_prob, int seed_number);
-    void sendPacket(int packet_index);
-    int recevAck();
+    void sendPacket(int packet_index, sockaddr_in client_address);
+    int recevAck(struct sockaddr_in socket_address);
 
     Packet receivePacket(int packet_index);
     void sendAck(int packet_index);

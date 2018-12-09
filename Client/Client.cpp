@@ -80,7 +80,7 @@ void Client::send_request_to_server() {
 
     // send the file name packet
     Packet packet = PacketHandler::create_packet(strdup(requested_file_name.c_str()), 0 , requested_file_name.size());
-    Sender sender = Sender(NULL);
+    Sender sender = Sender();
     sender.send_packet(packet, sock_fd);
     /*
      * wait until receive ack from server

@@ -20,6 +20,7 @@ private:
 
 public:
     FileWriter(string file_path, int chunk_size=CHUNK_SIZE);
+    FileWriter();
     ~FileWriter();
 
     void write_chunk(string data);

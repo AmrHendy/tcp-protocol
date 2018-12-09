@@ -10,6 +10,9 @@ FileWriter::FileWriter(string file_path, int chunk_size) {
     FileWriter::current_chunk_index = 0;
 }
 
+FileWriter::FileWriter() {
+}
+
 FileWriter::~FileWriter(){
     fclose(file);
     free(this);

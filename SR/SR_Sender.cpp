@@ -4,7 +4,7 @@
 
 #include "SR_Sender.h"
 
-SR_Sender::SR_Sender(int socket_fd, string file_name, double loss_prob, int seed_number, vector<int> window_changes): sender(NULL), reader(file_path){
+SR_Sender::SR_Sender(int socket_fd, string file_name, double loss_prob, int seed_number, vector<int> window_changes): sender(), reader(file_path){
     SR_Sender::socket_fd = socket_fd;
     SR_Sender::file_path = file_name;
     SR_Sender::window_changes = window_changes;

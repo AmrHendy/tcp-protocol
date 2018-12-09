@@ -7,7 +7,7 @@
 //see this for examples https://linux.die.net/man/3/getaddrinfo
 
 // fill the socket address with the sender address
-Packet Receiver::receive_packet(int socket_fd, struct sockaddr_in socket_address) {
+Packet Receiver::receive_packet(int socket_fd, struct sockaddr_in &socket_address) {
     Packet packet;
     socklen_t addrlen = sizeof(socket_address);
     //A test needed.
@@ -26,6 +26,8 @@ Packet Receiver::receive_packet(int socket_fd, struct sockaddr_in socket_address
 // fill the socket address with the sender address
 Ack_Packet Receiver::receive_ack_packet(int socket_fd, struct sockaddr_in socket_address, int& status, int TIMEOUT) {
     clock_t begin = clock();
+    int flags = fcntl(socket_fd, F_GETFL);
+    fcntl(socket_fd, F_SETFL, flags | O_NONBLOCK);
     while((clock() - begin)/ CLOCKS_PER_SEC < TIMEOUT){
         Ack_Packet ack_packet;
         socklen_t addrlen = sizeof(socket_address);

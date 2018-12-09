@@ -60,15 +60,18 @@ void Server::start_server(int strategy_option) {
 
         int number_of_packets = ceil(file_reader.get_file_size() * 1.0 / CHUNK_SIZE);
         // sending the ack with the number of packets which will be sended
-        //Sender sender = Sender(&client_address);
+
+        Sender sender = Sender(client_address);
         Ack_Server_Packet server_ack_packet;
         server_ack_packet.packets_numbers = number_of_packets;
-        //sender.send_server_ack(server_ack_packet, server_socket_fd);
+        sender.send_server_ack(server_ack_packet, server_socket_fd);
+
         // call the desired method to send the file
+        file_reader.close();
         if(strategy_option == 0){
             // stop and wait
             StopAndWait stopAndWait(server_socket_fd, packet.data);
-            stopAndWait.sendFile(packet_loss_prob, random_seed);
+            stopAndWait.sendFile(packet_loss_prob, random_seed, client_address);
         }
         else if(strategy_option == 1){
             // selective repeat

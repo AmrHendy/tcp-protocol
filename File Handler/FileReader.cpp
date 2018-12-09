@@ -66,5 +66,11 @@ bool FileReader::is_finished(){
 }
 
 int FileReader::get_total_packet_number(){
+    cout << "file size is " << get_file_size() << endl;
+    cout << "transfering " << ceil(1.0 * get_file_size() / FileReader::chunk_size) << " packet" <<endl;
     return ceil(1.0 * get_file_size() / FileReader::chunk_size);
+}
+
+void FileReader::close(){
+    fclose(file);
 }

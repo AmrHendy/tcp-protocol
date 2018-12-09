@@ -33,6 +33,7 @@ public:
     Packet get_chunk_data(int chunk_index);
     void advance_chunk_pointer();
     int get_total_packet_number();
+    void close();
 };
 
 

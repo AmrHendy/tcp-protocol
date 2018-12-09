@@ -11,14 +11,19 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <cstdlib>
+#include <string>
+#include <cstring>
+
+using namespace std;
 
 class Sender {
 
 private:
-    struct sockaddr *socket_address;
+    struct sockaddr_in socket_address;
 
 public:
-    explicit Sender(struct sockaddr *socket_addres);
+    explicit Sender(struct sockaddr_in socket_addres);
+    explicit Sender();
 
     void send_packet(Packet packet, int socket_fd);
     void send_ack(Ack_Packet ack_packet, int socket_fd);
