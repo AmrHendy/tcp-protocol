@@ -20,7 +20,7 @@ SR_Receiver::SR_Receiver(int socket_fd, string file_path, int total_packets): wr
 
 void SR_Receiver::recevFile(){
     while(start_window_packet < total_packets){
-        struct sockaddr *socket_address;
+        struct sockaddr_in socket_address;
         Packet packet = Receiver::receive_packet(socket_fd, socket_address);
         if(PacketHandler::compare_packet_checksum(packet) && packet.seqno >= start_window_packet && packet.seqno <= end_window_packet && received.find(packet.seqno) == received.end()){
             // accept the packet and send ack

@@ -9,6 +9,9 @@ using namespace std;
 
 #include <string>
 #include <cmath>
+#include <iostream>
+#include <stdio.h>
+
 #include "../Packet/Packet.h"
 #include "../Packet/PacketHandler.h"
 
@@ -20,8 +23,8 @@ private:
     int current_chunk_index;
 
 public:
+    explicit FileReader(const char* file_path, int chunk_size=CHUNK_SIZE);
     explicit FileReader(string file_path, int chunk_size=CHUNK_SIZE);
-    ~FileReader();
 
     int get_file_size();
     bool is_finished();

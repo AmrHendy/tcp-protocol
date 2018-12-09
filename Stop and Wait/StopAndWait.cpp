@@ -46,7 +46,7 @@ void StopAndWait::sendPacket(int packet_index) {
 }
 
 int StopAndWait::recevAck() {
-    struct sockaddr *socket_address;
+    struct sockaddr_in socket_address;
     int status;
     Receiver::receive_ack_packet(StopAndWait::socket_fd, socket_address, status, STOP_AND_WAIT_TIMEOUT);
     return status;
@@ -63,7 +63,7 @@ void StopAndWait::recevFile(int total_packets){
 }
 
 Packet StopAndWait::receivePacket(int packet_index){
-    struct sockaddr *socket_address;
+    struct sockaddr_in socket_address;
     Packet packet = Receiver::receive_packet(socket_fd, socket_address);
     if(PacketHandler::compare_packet_checksum(packet) && packet.seqno == packet_index) {
         // true check sum send the ack

@@ -8,7 +8,7 @@
 using namespace std;
 
 #include <string>
-#include <cstdio>
+#include <stdio.h>
 #include <iostream>
 #include <sys/socket.h>
 #include <sys/types.h>

@@ -76,7 +76,7 @@ void SR_Sender::send_handling(){
 void SR_Sender::recev_ack_handling(){
     int total_packets = reader.get_total_packet_number();
     while(start_window_packet < total_packets){
-        struct sockaddr *socket_address;
+        struct sockaddr_in socket_address;
         int status;
         Ack_Packet ack_packet = Receiver::receive_ack_packet(socket_fd, socket_address, status);
         if(status == 1){

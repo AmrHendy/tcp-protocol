@@ -5,6 +5,7 @@
 #include "FileReader.h"
 
 FileReader::FileReader(string file_path, int chunk_size) {
+    cout << file_path << endl;
     FileReader::file = fopen(file_path.c_str(), "rb");
     if (!file){
         perror("No Existing File at server");
@@ -13,9 +14,14 @@ FileReader::FileReader(string file_path, int chunk_size) {
     FileReader::current_chunk_index = 0;
 }
 
-FileReader::~FileReader() {
-    fclose(file);
-    free(this);
+FileReader::FileReader(const char* file_path, int chunk_size) {
+    cout << file_path << endl;
+    FileReader::file = fopen(file_path, "rb");
+    if (!file){
+        perror("No Existing File at server");
+    }
+    FileReader::chunk_size = chunk_size;
+    FileReader::current_chunk_index = 0;
 }
 
 int FileReader::get_file_size() {

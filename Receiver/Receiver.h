@@ -12,16 +12,20 @@
 #include <netinet/in.h>
 #include <ctime>
 #include <cstdio>
+#include <cstdlib>
+#include <unistd.h>
+#include <cstring>
+using namespace std;
+
 
 class Receiver {
 
 public:
     explicit Receiver();
-    ~Receiver();
 
-    static Packet receive_packet(int socket_fd, struct sockaddr *socket_address);
-    static Ack_Packet receive_ack_packet(int socket_fd, struct sockaddr *socket_address, int& status, int TIMEOUT=1000);
-    static Ack_Server_Packet receive_ack_server_packet(int socket_fd, struct sockaddr *socket_address);
+    static Packet receive_packet(int socket_fd, struct sockaddr_in socket_address);
+    static Ack_Packet receive_ack_packet(int socket_fd, struct sockaddr_in socket_address, int& status, int TIMEOUT=1000);
+    static Ack_Server_Packet receive_ack_server_packet(int socket_fd, struct sockaddr_in socket_address);
 };
 
 #endif //TCP_PROTOCOL_RECEIVER_H

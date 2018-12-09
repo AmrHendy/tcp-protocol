@@ -7,13 +7,14 @@
 //see this for examples https://linux.die.net/man/3/getaddrinfo
 
 // fill the socket address with the sender address
-Packet Receiver::receive_packet(int socket_fd, struct sockaddr *socket_address) {
+Packet Receiver::receive_packet(int socket_fd, struct sockaddr_in socket_address) {
     Packet packet;
     socklen_t addrlen = sizeof(socket_address);
     //A test needed.
     int bytes = recvfrom(socket_fd, &packet, sizeof(packet),
-                     0, (struct sockaddr *) &socket_address, &addrlen);
-    if(bytes != sizeof(Packet) || bytes <= 0){
+                 MSG_WAITALL, (struct sockaddr *) &socket_address, &addrlen);
+
+    if(bytes != sizeof(Packet) || bytes <= 0) {
         perror("Not received all the packet data");
         //status = 0;
         //return Packet();
@@ -23,7 +24,7 @@ Packet Receiver::receive_packet(int socket_fd, struct sockaddr *socket_address) 
 }
 
 // fill the socket address with the sender address
-Ack_Packet Receiver::receive_ack_packet(int socket_fd, struct sockaddr *socket_address, int& status, int TIMEOUT) {
+Ack_Packet Receiver::receive_ack_packet(int socket_fd, struct sockaddr_in socket_address, int& status, int TIMEOUT) {
     clock_t begin = clock();
     while((clock() - begin)/ CLOCKS_PER_SEC < TIMEOUT){
         Ack_Packet ack_packet;
@@ -40,7 +41,7 @@ Ack_Packet Receiver::receive_ack_packet(int socket_fd, struct sockaddr *socket_a
 }
 
 // fill the socket address with the sender address
-Ack_Server_Packet Receiver::receive_ack_server_packet(int socket_fd, struct sockaddr *socket_address) {
+Ack_Server_Packet Receiver::receive_ack_server_packet(int socket_fd, struct sockaddr_in socket_address) {
     Ack_Server_Packet ack_server_packet;
     socklen_t addrlen = sizeof(socket_address);
     int bytes = recvfrom(socket_fd, &ack_server_packet, sizeof(ack_server_packet),

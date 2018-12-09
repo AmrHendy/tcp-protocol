@@ -8,11 +8,6 @@ Sender::Sender(sockaddr *socket_addres) {
     Sender::socket_address = socket_addres;
 }
 
-Sender::~Sender() {
-    delete(socket_address);
-    free(this);
-}
-
 void Sender::send_packet(Packet packet, int socket_fd) {
     sendto(socket_fd, (void*) &packet, sizeof(packet), 0, (struct sockaddr*)&socket_address, sizeof(socket_address));
 }
