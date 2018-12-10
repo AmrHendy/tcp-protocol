@@ -5,7 +5,7 @@
 #include "StopAndWait.h"
 
 //fileWriter must be intialized in consturctor or remove it from header.
-StopAndWait::StopAndWait(int socket_fd, string file_name): fileReader(file_name), fileWriter(){
+StopAndWait::StopAndWait(int socket_fd, string file_name): fileReader(file_name){
     StopAndWait::socket_fd = socket_fd;
     StopAndWait::file_path = file_name;
 }
@@ -22,21 +22,18 @@ void StopAndWait::sendFile(double loss_prob, int seed_number, struct sockaddr_in
 
 void StopAndWait::sendPacket(int packet_index, sockaddr_in client_address) {
     int status;
-    if(loss_packets_indices.count(packet_index)){
-        status = recevAck(client_address);
-        loss_packets_indices.erase(packet_index);
+    while(1){
+        if(loss_packets_indices.count(packet_index)){
+            status = recevAck(client_address);
+            loss_packets_indices.erase(packet_index);
+        } else {
+            Packet packet = fileReader.get_chunk_data(packet_index);
+            Sender sender(client_address);
+            sender.send_packet(packet, socket_fd);
+            status = recevAck(client_address);
+            return;
+        }
     }
-    else{
-        Packet packet = fileReader.get_chunk_data(packet_index);
-        Sender sender(client_address);
-        sender.send_packet(packet, socket_fd);
-        status = recevAck(client_address);
-    }
-    if(status == 0){
-        // resend the packet
-        sendPacket(packet_index, client_address);
-    }
-    return;
 }
 
 int StopAndWait::recevAck(struct sockaddr_in socket_address) {
@@ -45,15 +42,6 @@ int StopAndWait::recevAck(struct sockaddr_in socket_address) {
     return status;
 }
 
-
-// called by the client
-void StopAndWait::recevFile(int total_packets){
-    fileWriter = FileWriter();
-    for(int packet_index = 0; packet_index < total_packets; packet_index++){
-        Packet packet = receivePacket(packet_index);
-        fileWriter.write_chunk_data(packet.seqno, string(packet.data));
-    }
-}
 
 Packet StopAndWait::receivePacket(int packet_index){
     struct sockaddr_in socket_address;

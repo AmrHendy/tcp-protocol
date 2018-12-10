@@ -21,6 +21,7 @@ private:
     FILE *file;
     int chunk_size;
     int current_chunk_index;
+    char* file_path;
 
 public:
     explicit FileReader(const char* file_path, int chunk_size=CHUNK_SIZE);

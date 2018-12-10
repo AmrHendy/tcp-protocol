@@ -5,8 +5,8 @@
 #include "FileReader.h"
 
 FileReader::FileReader(string file_path, int chunk_size) {
-    cout << file_path << endl;
     FileReader::file = fopen(file_path.c_str(), "rb");
+    file_path = file_path.c_str();
     if (!file){
         perror("No Existing File at server");
     }
@@ -15,8 +15,8 @@ FileReader::FileReader(string file_path, int chunk_size) {
 }
 
 FileReader::FileReader(const char* file_path, int chunk_size) {
-    cout << file_path << endl;
     FileReader::file = fopen(file_path, "rb");
+    file_path = file_path;
     if (!file){
         perror("No Existing File at server");
     }
@@ -51,10 +51,11 @@ Packet FileReader::get_chunk_data(int chunk_index) {
     if(chunk_index * chunk_size >= get_file_size()){
         perror("No remaining bytes to be read");
     }
-    fseek(FileReader::file, chunk_index * chunk_size, SEEK_SET);
     char * buffer = (char*) malloc(chunk_size);
-    int bytes_readed = fread (buffer, sizeof(char), sizeof(buffer), file);
-    if(bytes_readed != chunk_size && ftell(file) != SEEK_END){
+    int bytes_readed;
+    fseek(FileReader::file, chunk_index * chunk_size, SEEK_SET);
+    bytes_readed = fread (buffer, sizeof(char), chunk_size, file);
+    if((bytes_readed != chunk_size && ftell(file) != SEEK_END)){
         perror("Reading File Error");
     }
     Packet packet = PacketHandler::create_packet(buffer, chunk_index, bytes_readed);

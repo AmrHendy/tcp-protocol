@@ -6,38 +6,34 @@
 
 #IncludeRegexTransform: 
 
+/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.cpp
+FileReader.h
+/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
+
+/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
+string
+-
+cmath
+-
+iostream
+-
+stdio.h
+-
+../Packet/Packet.h
+/home/arsanuos/projects/tcp-protocol/Packet/Packet.h
+../Packet/PacketHandler.h
+/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
+
 /home/arsanuos/projects/tcp-protocol/Packet/Packet.h
 cstdint
 -
 ../Utils/constants.h
 /home/arsanuos/projects/tcp-protocol/Utils/constants.h
 
-/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.cpp
-Receiver.h
-/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
-
-/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
-../Packet/Packet.h
+/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
+Packet.h
 /home/arsanuos/projects/tcp-protocol/Packet/Packet.h
-sys/types.h
--
-arpa/inet.h
--
-sys/socket.h
--
-netinet/in.h
--
-ctime
--
-cstdio
--
-cstdlib
--
-unistd.h
--
 cstring
--
-fcntl.h
 -
 
 /home/arsanuos/projects/tcp-protocol/Utils/constants.h

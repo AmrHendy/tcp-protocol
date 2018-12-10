@@ -32,7 +32,7 @@ private:
     string file_path;
     set<int> loss_packets_indices;
     FileReader fileReader;
-    FileWriter fileWriter;
+    //FileWriter fileWriter;
 
     void get_loss_packets(double loss_prob, int seed_number);
     void sendPacket(int packet_index, sockaddr_in client_address);
