@@ -61,6 +61,7 @@ CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o
  /home/arsanuos/projects/tcp-protocol/Packet/Packet.h
  /home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
  /home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
+ /home/arsanuos/projects/tcp-protocol/SR/SR_Sender.h
  /home/arsanuos/projects/tcp-protocol/Sender/Sender.h
  /home/arsanuos/projects/tcp-protocol/Server/Server.cpp
  /home/arsanuos/projects/tcp-protocol/Server/Server.h

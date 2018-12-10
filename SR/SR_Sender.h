@@ -11,6 +11,7 @@
 #include <mutex>
 #include <map>
 #include <set>
+#include <fstream>
 
 #include "../File Handler/FileReader.h"
 #include "../Sender/Sender.h"
@@ -44,9 +45,11 @@ private:
     thread sender_thread;
     thread receiver_thread;
     mutex mtx;
+    struct sockaddr_in client_socket;
 
 public:
-    explicit SR_Sender(int socket_fd, string file_name, double loss_prob, int seed_number, vector<int> window_changes);
+    explicit SR_Sender(int socket_fd, string file_name,
+            double loss_prob, int seed_number, struct sockaddr_in client_socket);
 
     void sendFile();
 

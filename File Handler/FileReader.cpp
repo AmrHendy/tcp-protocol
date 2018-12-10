@@ -55,8 +55,9 @@ Packet FileReader::get_chunk_data(int chunk_index) {
     int bytes_readed;
     fseek(FileReader::file, chunk_index * chunk_size, SEEK_SET);
     bytes_readed = fread (buffer, sizeof(char), chunk_size, file);
-    if((bytes_readed != chunk_size && ftell(file) != SEEK_END)){
-        perror("Reading File Error");
+    //TODO:: check this.
+    if(bytes_readed != chunk_size && !is_finished()){
+        //perror("Reading File Error");
     }
     Packet packet = PacketHandler::create_packet(buffer, chunk_index, bytes_readed);
     return packet;

@@ -60,6 +60,7 @@ CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../File\ Handler/FileWriter.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Packet/Packet.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Packet/PacketHandler.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Receiver/Receiver.h
+CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../SR/SR_Sender.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Sender/Sender.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Server/Server.cpp
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Server/Server.h

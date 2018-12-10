@@ -5,6 +5,7 @@
 #include "Server.h"
 #include "../File Handler/FileReader.h"
 #include "../Stop and Wait/StopAndWait.h"
+#include "../SR/SR_Sender.h"
 
 Server::Server(string server_conf_file_dir) {
     freopen(server_conf_file_dir.c_str(), "r", stdin);
@@ -72,9 +73,13 @@ void Server::start_server(int strategy_option) {
             // stop and wait
             StopAndWait stopAndWait(server_socket_fd, packet.data);
             stopAndWait.sendFile(packet_loss_prob, random_seed, client_address);
+            break;
         }
         else if(strategy_option == 1){
             // selective repeat
+            SR_Sender SR(server_socket_fd, file_name.c_str(), packet_loss_prob, random_seed, client_address);
+            SR.sendFile();
+            break;
         }
         else{
             // GBN
