@@ -6,46 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/arsanuos/projects/tcp-protocol/Client/Client.cpp
-Client.h
-/home/arsanuos/projects/tcp-protocol/Client/Client.h
-
-/home/arsanuos/projects/tcp-protocol/Client/Client.h
-iostream
--
-fstream
--
-cstring
--
-unistd.h
--
-cstdio
--
-cstdlib
--
-sys/socket.h
--
-sys/types.h
--
-netinet/in.h
--
-arpa/inet.h
--
-memory
--
-ctime
--
-../Sender/Sender.h
-/home/arsanuos/projects/tcp-protocol/Sender/Sender.h
-../Receiver/Receiver.h
-/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
-../File Handler/FileReader.h
-/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
-../Utils/constants.h
-/home/arsanuos/projects/tcp-protocol/Utils/constants.h
-../Packet/PacketHandler.h
-/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
-
 /home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
 string
 -
@@ -109,6 +69,8 @@ stdbool.h
 -
 unistd.h
 -
+set
+-
 
 /home/arsanuos/projects/tcp-protocol/Packet/Packet.h
 cstdint
@@ -121,10 +83,6 @@ Packet.h
 /home/arsanuos/projects/tcp-protocol/Packet/Packet.h
 cstring
 -
-
-/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.cpp
-Receiver.h
-/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
 
 /home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
 ../Packet/Packet.h
@@ -150,54 +108,6 @@ cstring
 fcntl.h
 -
 
-/home/arsanuos/projects/tcp-protocol/SR/SR_Receiver.cpp
-SR_Receiver.h
-/home/arsanuos/projects/tcp-protocol/SR/SR_Receiver.h
-
-/home/arsanuos/projects/tcp-protocol/SR/SR_Receiver.h
-vector
--
-map
--
-../File Handler/FileWriter.h
-/home/arsanuos/projects/tcp-protocol/File Handler/FileWriter.h
-../Sender/Sender.h
-/home/arsanuos/projects/tcp-protocol/Sender/Sender.h
-../Receiver/Receiver.h
-/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
-../Utils/constants.h
-/home/arsanuos/projects/tcp-protocol/Utils/constants.h
-../Packet/PacketHandler.h
-/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
-
-/home/arsanuos/projects/tcp-protocol/SR/SR_Sender.cpp
-SR_Sender.h
-/home/arsanuos/projects/tcp-protocol/SR/SR_Sender.h
-
-/home/arsanuos/projects/tcp-protocol/SR/SR_Sender.h
-vector
--
-thread
--
-mutex
--
-map
--
-set
--
-fstream
--
-../File Handler/FileReader.h
-/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
-../Sender/Sender.h
-/home/arsanuos/projects/tcp-protocol/Sender/Sender.h
-../Receiver/Receiver.h
-/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
-../Utils/constants.h
-/home/arsanuos/projects/tcp-protocol/Utils/constants.h
-../Packet/PacketHandler.h
-/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
-
 /home/arsanuos/projects/tcp-protocol/Sender/Sender.h
 ../Packet/Packet.h
 /home/arsanuos/projects/tcp-protocol/Packet/Packet.h
@@ -216,71 +126,5 @@ string
 cstring
 -
 
-/home/arsanuos/projects/tcp-protocol/Server/Server.cpp
-Server.h
-/home/arsanuos/projects/tcp-protocol/Server/Server.h
-../File Handler/FileReader.h
-/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
-../Stop and Wait/StopAndWait.h
-/home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.h
-../SR/SR_Sender.h
-/home/arsanuos/projects/tcp-protocol/SR/SR_Sender.h
-../GBN/GBN_sender.h
-/home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.h
-
-/home/arsanuos/projects/tcp-protocol/Server/Server.h
-string
--
-stdio.h
--
-iostream
--
-sys/socket.h
--
-sys/types.h
--
-netinet/in.h
--
-unistd.h
--
-../Sender/Sender.h
-/home/arsanuos/projects/tcp-protocol/Sender/Sender.h
-../Receiver/Receiver.h
-/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
-../File Handler/FileReader.h
-/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
-../Utils/constants.h
 /home/arsanuos/projects/tcp-protocol/Utils/constants.h
-
-/home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.cpp
-StopAndWait.h
-/home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.h
-
-/home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.h
-string
--
-set
--
-unistd.h
--
-../File Handler/FileReader.h
-/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
-../File Handler/FileWriter.h
-/home/arsanuos/projects/tcp-protocol/File Handler/FileWriter.h
-../Sender/Sender.h
-/home/arsanuos/projects/tcp-protocol/Sender/Sender.h
-../Receiver/Receiver.h
-/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
-../Utils/constants.h
-/home/arsanuos/projects/tcp-protocol/Utils/constants.h
-../Packet/PacketHandler.h
-/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
-
-/home/arsanuos/projects/tcp-protocol/Utils/constants.h
-
-/home/arsanuos/projects/tcp-protocol/serverMain.cpp
-iostream
--
-Server/Server.h
-/home/arsanuos/projects/tcp-protocol/Server/Server.h
 

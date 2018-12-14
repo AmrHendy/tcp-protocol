@@ -26,6 +26,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <unistd.h>
+#include <set>
 
 using namespace std;
 
@@ -45,6 +46,10 @@ private:
     double PLP;
     struct sockaddr_in client_socket;
     Sender sender;
+    set<int> loss_packets_indices;
+    vector<int> window_changes;
+    int i = 0;
+
 
     bool is_corrupt(uint16_t cksum);
 
@@ -70,6 +75,10 @@ public:
     void gbn_recv();
 
     bool gbn_send(Packet pkt);
+
+    void get_loss_packets(double loss_prob, int seed_number);
+
+    bool congestion_time();
 
 
 };
