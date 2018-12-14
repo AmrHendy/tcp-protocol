@@ -6,6 +6,7 @@
 #include "../File Handler/FileReader.h"
 #include "../Stop and Wait/StopAndWait.h"
 #include "../SR/SR_Sender.h"
+#include "../GBN/GBN_sender.h"
 
 Server::Server(string server_conf_file_dir) {
     freopen(server_conf_file_dir.c_str(), "r", stdin);
@@ -45,7 +46,6 @@ void Server::init_server() {
 void Server::start_server(int strategy_option) {
     init_server();
     printf("Server is waiting for clients\n");
-    while(true) {
         /* server main loop */
         printf("Successfully Connected with a Client\n");
         struct sockaddr_in client_address;
@@ -73,17 +73,16 @@ void Server::start_server(int strategy_option) {
             // stop and wait
             StopAndWait stopAndWait(server_socket_fd, packet.data);
             stopAndWait.sendFile(packet_loss_prob, random_seed, client_address);
-            break;
         }
         else if(strategy_option == 1){
             // selective repeat
             SR_Sender SR(server_socket_fd, file_name.c_str(), packet_loss_prob, random_seed, client_address);
             SR.sendFile();
-            break;
         }
         else{
             // GBN
+            GBN gbn(file_name, server_socket_fd, 3, packet_loss_prob, client_address);
+            gbn.start();
         }
         printf("Finished Client\n");
-    }
 }

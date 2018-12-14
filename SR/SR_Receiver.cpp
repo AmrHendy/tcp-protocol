@@ -41,6 +41,6 @@ void SR_Receiver::recevFile(){
     int current_packet = 0;
     while(current_packet < total_packets){
         Packet packet = received[current_packet];
-        writer.write_chunk_data(current_packet, packet.data);
+        writer.write_chunk_data(current_packet, string(packet.data, packet.len));
     }
 }

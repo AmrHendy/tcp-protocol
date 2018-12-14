@@ -7,7 +7,14 @@
 
 #include "../File Handler/FileReader.h"
 #include "../File Handler/FileWriter.h"
-#include "helper.h"
+#include "../Packet/PacketHandler.h"
+#include "../Packet/Packet.h"
+
+#include "../Packet/PacketHandler.h"
+#include "../Packet/Packet.h"
+#include "../Sender/Sender.h"
+#include "../Receiver/Receiver.h"
+#include "../Utils/constants.h"
 
 #include <bits/stdc++.h>
 #include <stdint.h>
@@ -31,12 +38,13 @@ private:
     double threshold = 10;/* threshold of timeout 10 seconds.*/
     //FileHandler file_handler;
     FileReader fileReader;
-    FileWriter fileWriter;
     int N;
     int sentPackets;
     vector<Packet> sentpkt;
     int client_fd;
     double PLP;
+    struct sockaddr_in client_socket;
+    Sender sender;
 
     bool is_corrupt(uint16_t cksum);
 
@@ -51,7 +59,7 @@ private:
     void stop_timer();
 
 public:
-    GBN(FileWriter fileWriter, FileReader fileReader, int client_fd, int N, double PLP);
+    GBN(string file_name, int client_fd, int N, double PLP, struct sockaddr_in client_socket);
 
     void start();
 

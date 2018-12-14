@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/arsanuos/projects/tcp-protocol/Client/Client.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Client/Client.cpp.o"
   "/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/File_Handler/FileReader.cpp.o"
   "/home/arsanuos/projects/tcp-protocol/File Handler/FileWriter.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/File_Handler/FileWriter.cpp.o"
+  "/home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o"
   "/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Packet/PacketHandler.cpp.o"
   "/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/Receiver/Receiver.cpp.o"
   "/home/arsanuos/projects/tcp-protocol/SR/SR_Receiver.cpp" "/home/arsanuos/projects/tcp-protocol/cmake-build-debug/CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.o"

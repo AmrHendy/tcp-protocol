@@ -4,15 +4,20 @@
 #include "GBN_sender.h"
 
 
-GBN::GBN(FileWriter fileWriter, FileReader fileReader, int client_fd, int N, double PLP) : fileReader(fileReader), fileWriter(fileWriter) {
+GBN::GBN(string file_name, int client_fd, int N, double PLP, struct sockaddr_in client_socket)
+        : fileReader(file_name.c_str()), sender(client_socket) {
     this->client_fd = client_fd;
-    this.N = N;
+    this->N = N;
     this->PLP = PLP;
+    this->client_socket = client_socket;
     sentpkt.resize(N);
+    this->threshold = 5;
+    this->next_seq_num = 0;
 }
 
 
 void GBN::start() {
+    int total_packets = fileReader.get_total_packet_number();
     bool sent = true;
     Packet pkt;
     while (1) {
@@ -20,26 +25,20 @@ void GBN::start() {
             break;
         }
         if (sent) {
-            //TODO:: how to know seq number.
-            pkt.data = fileReader.get_current_chunk_data();
-            pkt.len = pkt.data.length() + 2 + 4; /* len = 2 , seqno = 4*/
-            pkt.seqno = this->next_seq_num;
+            pkt = fileReader.get_current_chunk_data();
+            if(pkt.len != -1){
+                sender.send_packet(pkt, client_fd);
+            }
         }
         //send.
-        sent = gbn_send(pkt);
-        if (!sent) {
-            //check timeout
-            time_out();
-            //recv ack pkt
-            gbn_recv();
-        }
+        gbn_send(pkt);
+        //check timeout
+        time_out();
+        //recv ack pkt
+        gbn_recv();
     }
 }
 
-bool GBN::is_corrupt(uint16_t pkt) {
-    //TODO:: implement one of the algorithms here.
-    return false;
-}
 
 clock_t GBN::start_timer() {
     timer = clock();
@@ -61,7 +60,7 @@ bool GBN::check_timeout() {
 bool GBN::gbn_send(Packet pkt) {
     if (next_seq_num < base + N) {
         sentpkt[next_seq_num] = pkt;
-        send_pkt(client_fd, pkt);
+        sender.send_packet(pkt, client_fd);
         if (base == next_seq_num) {
             start_timer();
         }
@@ -82,14 +81,16 @@ void GBN::time_out() {
 void GBN::resend_all() {
     start_timer();
     for (auto pkt : sentpkt) {
-        send_pkt(client_fd, pkt);
+        sender.send_packet(pkt, client_fd);
     }
 }
 
 void GBN::gbn_recv() {
-    Ack_Packet pkt = recv_ack_pkt(client_fd);
-    if (!is_corrupt(pkt.cksum)) {
+    int status;
+    Ack_Packet pkt = Receiver::receive_ack_packet(client_fd, client_socket, status);
+    if (!status || !PacketHandler::compare_ack_packet_checksum(pkt)) {
         base = pkt.ackno + 1;
+        cout << pkt.ackno << endl;
         if (base == next_seq_num) {
             stop_timer();
         } else {

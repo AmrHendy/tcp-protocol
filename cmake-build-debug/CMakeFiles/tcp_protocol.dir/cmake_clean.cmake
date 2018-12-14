@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/tcp_protocol.dir/Stop_and_Wait/StopAndWait.cpp.o"
   "CMakeFiles/tcp_protocol.dir/SR/SR_Receiver.cpp.o"
   "CMakeFiles/tcp_protocol.dir/SR/SR_Sender.cpp.o"
+  "CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o"
   "tcp_protocol.pdb"
   "tcp_protocol"
 )

@@ -13,4 +13,5 @@ add_executable(tcp_protocol serverMain.cpp Client/Client.cpp
         Packet/PacketHandler.cpp Packet/PacketHandler.h
         "Stop and Wait/StopAndWait.cpp"
         "Stop and Wait/StopAndWait.h" SR/SR_Receiver.cpp SR/SR_Receiver.h
-        SR/SR_Sender.cpp SR/SR_Sender.h)
+        SR/SR_Sender.cpp SR/SR_Sender.h
+        GBN/GBN_sender.h GBN/GBN_sender.cpp)

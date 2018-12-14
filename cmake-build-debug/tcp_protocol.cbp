@@ -102,6 +102,12 @@
 		<Unit filename="/home/arsanuos/projects/tcp-protocol/File Handler/FileWriter.h">
 			<Option target="tcp_protocol"/>
 		</Unit>
+		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.cpp">
+			<Option target="tcp_protocol"/>
+		</Unit>
+		<Unit filename="/home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.h">
+			<Option target="tcp_protocol"/>
+		</Unit>
 		<Unit filename="/home/arsanuos/projects/tcp-protocol/Packet/Packet.h">
 			<Option target="tcp_protocol"/>
 		</Unit>

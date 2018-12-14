@@ -26,6 +26,6 @@ void FileWriter::write_chunk(string data){
 void FileWriter::write_chunk_data(int chunk_index, string data) {
     fseek(FileWriter::file, chunk_index * chunk_size, SEEK_SET);
     char * buffer = strdup(data.c_str());
-    fwrite(buffer, sizeof(char), sizeof(buffer), file);
+    fwrite(buffer, 1, sizeof(buffer), file);
 }
 

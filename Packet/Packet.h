@@ -12,7 +12,7 @@
 struct Packet {
     /* Header */
     uint16_t cksum; /* Optional bonus part */
-    uint16_t len;
+    uint16_t len = -1;
     uint32_t seqno;
     /* Data */
     char data[CHUNK_SIZE]; /* Not always 500 bytes, can be less */

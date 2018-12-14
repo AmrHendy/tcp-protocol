@@ -38,6 +38,7 @@ int FileReader::get_current_chunk_index() {
 Packet FileReader::get_current_chunk_data() {
     if(is_finished()){
         perror("No remaining bytes to be read");
+        return Packet();
     }
     current_chunk_index++;
     return get_chunk_data(current_chunk_index - 1);
@@ -48,23 +49,17 @@ void FileReader::advance_chunk_pointer() {
 }
 
 Packet FileReader::get_chunk_data(int chunk_index) {
-    if(chunk_index * chunk_size >= get_file_size()){
-        perror("No remaining bytes to be read");
-    }
-    char * buffer = (char*) malloc(chunk_size);
+    int size = min(chunk_size, get_file_size() - (chunk_index*chunk_size));
+    char * buffer = (char*) malloc(size);
     int bytes_readed;
     fseek(FileReader::file, chunk_index * chunk_size, SEEK_SET);
-    bytes_readed = fread (buffer, sizeof(char), chunk_size, file);
-    //TODO:: check this.
-    if(bytes_readed != chunk_size && !is_finished()){
-        //perror("Reading File Error");
-    }
+    bytes_readed = fread (buffer, sizeof(char), size, file);
     Packet packet = PacketHandler::create_packet(buffer, chunk_index, bytes_readed);
     return packet;
 }
 
 bool FileReader::is_finished(){
-    return ftell(file) == SEEK_END;
+    return ftell(file) == get_file_size();
 }
 
 int FileReader::get_total_packet_number(){

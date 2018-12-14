@@ -12,7 +12,7 @@ Packet Receiver::receive_packet(int socket_fd, struct sockaddr_in &socket_addres
     socklen_t addrlen = sizeof(socket_address);
     //A test needed.
     int bytes = recvfrom(socket_fd, &packet, sizeof(packet),
-                 MSG_WAITALL, (struct sockaddr *) &socket_address, &addrlen);
+                         MSG_WAITALL, (struct sockaddr *) &socket_address, &addrlen);
 
     if(bytes != sizeof(Packet) || bytes <= 0) {
         perror("Not received all the packet data");

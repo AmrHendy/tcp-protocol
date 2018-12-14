@@ -204,6 +204,33 @@ File_Handler/FileWriter.cpp.s:
 	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/File_Handler/FileWriter.cpp.s
 .PHONY : File_Handler/FileWriter.cpp.s
 
+GBN/GBN_sender.o: GBN/GBN_sender.cpp.o
+
+.PHONY : GBN/GBN_sender.o
+
+# target to build an object file
+GBN/GBN_sender.cpp.o:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o
+.PHONY : GBN/GBN_sender.cpp.o
+
+GBN/GBN_sender.i: GBN/GBN_sender.cpp.i
+
+.PHONY : GBN/GBN_sender.i
+
+# target to preprocess a source file
+GBN/GBN_sender.cpp.i:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.i
+.PHONY : GBN/GBN_sender.cpp.i
+
+GBN/GBN_sender.s: GBN/GBN_sender.cpp.s
+
+.PHONY : GBN/GBN_sender.s
+
+# target to generate assembly for a file
+GBN/GBN_sender.cpp.s:
+	$(MAKE) -f CMakeFiles/tcp_protocol.dir/build.make CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.s
+.PHONY : GBN/GBN_sender.cpp.s
+
 Packet/PacketHandler.o: Packet/PacketHandler.cpp.o
 
 .PHONY : Packet/PacketHandler.o
@@ -438,6 +465,9 @@ help:
 	@echo "... File_Handler/FileWriter.o"
 	@echo "... File_Handler/FileWriter.i"
 	@echo "... File_Handler/FileWriter.s"
+	@echo "... GBN/GBN_sender.o"
+	@echo "... GBN/GBN_sender.i"
+	@echo "... GBN/GBN_sender.s"
 	@echo "... Packet/PacketHandler.o"
 	@echo "... Packet/PacketHandler.i"
 	@echo "... Packet/PacketHandler.s"

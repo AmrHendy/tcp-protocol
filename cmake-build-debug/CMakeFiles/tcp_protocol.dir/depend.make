@@ -22,6 +22,16 @@ CMakeFiles/tcp_protocol.dir/File_Handler/FileWriter.cpp.o: ../Packet/Packet.h
 CMakeFiles/tcp_protocol.dir/File_Handler/FileWriter.cpp.o: ../Packet/PacketHandler.h
 CMakeFiles/tcp_protocol.dir/File_Handler/FileWriter.cpp.o: ../Utils/constants.h
 
+CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o: ../File\ Handler/FileReader.h
+CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o: ../File\ Handler/FileWriter.h
+CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o: ../GBN/GBN_sender.cpp
+CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o: ../GBN/GBN_sender.h
+CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o: ../Packet/Packet.h
+CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o: ../Packet/PacketHandler.h
+CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o: ../Receiver/Receiver.h
+CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o: ../Sender/Sender.h
+CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o: ../Utils/constants.h
+
 CMakeFiles/tcp_protocol.dir/Packet/PacketHandler.cpp.o: ../Packet/Packet.h
 CMakeFiles/tcp_protocol.dir/Packet/PacketHandler.cpp.o: ../Packet/PacketHandler.cpp
 CMakeFiles/tcp_protocol.dir/Packet/PacketHandler.cpp.o: ../Packet/PacketHandler.h
@@ -57,6 +67,7 @@ CMakeFiles/tcp_protocol.dir/Sender/Sender.cpp.o: ../Utils/constants.h
 
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../File\ Handler/FileReader.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../File\ Handler/FileWriter.h
+CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../GBN/GBN_sender.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Packet/Packet.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Packet/PacketHandler.h
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o: ../Receiver/Receiver.h

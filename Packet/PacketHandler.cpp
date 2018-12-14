@@ -6,7 +6,9 @@
 
 Packet PacketHandler::create_packet(char* data, int seqno, int len){
     Packet packet;
-    strcpy(packet.data, data);
+    for(int i = 0 ;i < len; i++){
+        packet.data[i] = data[i];
+    }
     packet.seqno = seqno;
     packet.len = len;
     packet.cksum = calculate_packet_checksum(packet);

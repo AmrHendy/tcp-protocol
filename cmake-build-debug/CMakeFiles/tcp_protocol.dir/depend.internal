@@ -22,6 +22,16 @@ CMakeFiles/tcp_protocol.dir/File_Handler/FileWriter.cpp.o
  /home/arsanuos/projects/tcp-protocol/Packet/Packet.h
  /home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
  /home/arsanuos/projects/tcp-protocol/Utils/constants.h
+CMakeFiles/tcp_protocol.dir/GBN/GBN_sender.cpp.o
+ /home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
+ /home/arsanuos/projects/tcp-protocol/File Handler/FileWriter.h
+ /home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.cpp
+ /home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.h
+ /home/arsanuos/projects/tcp-protocol/Packet/Packet.h
+ /home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
+ /home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
+ /home/arsanuos/projects/tcp-protocol/Sender/Sender.h
+ /home/arsanuos/projects/tcp-protocol/Utils/constants.h
 CMakeFiles/tcp_protocol.dir/Packet/PacketHandler.cpp.o
  /home/arsanuos/projects/tcp-protocol/Packet/Packet.h
  /home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.cpp
@@ -58,6 +68,7 @@ CMakeFiles/tcp_protocol.dir/Sender/Sender.cpp.o
 CMakeFiles/tcp_protocol.dir/Server/Server.cpp.o
  /home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
  /home/arsanuos/projects/tcp-protocol/File Handler/FileWriter.h
+ /home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.h
  /home/arsanuos/projects/tcp-protocol/Packet/Packet.h
  /home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
  /home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h

@@ -55,7 +55,7 @@ void SR_Sender::send_handling(){
                     window_congestion_index++;
                     cwnd = max((int)floor(1.0 * cwnd / multiplicative_decrease), 1);
                     start_window_packet = start_window_packet;
-                    end_window_packet = start_window_packet + cwnd - 1;
+                    end_window_packet = min(start_window_packet + cwnd - 1, total_packets - 1);
                     break;
                 } else{
                     sender.send_packet(packet, socket_fd);
@@ -95,9 +95,13 @@ void SR_Sender::recev_ack_handling(){
                 while(start_window_packet <= end_window_packet && acked.find(start_window_packet) != acked.end()){
                     start_window_packet++;
                 }
-                // TODO what is threshold ,, how it works with cwnd ??
-                cwnd = cwnd + additive_increase;
-                end_window_packet = min(start_window_packet + cwnd - 1, total_packets);
+                if(cwnd < threshold){
+                    //exp
+                    cwnd *= 2;
+                }else {
+                    cwnd += additive_increase;
+                }
+                end_window_packet = min(start_window_packet + cwnd - 1, total_packets - 1);
             }
             else{
                 // ignore the ack packet
