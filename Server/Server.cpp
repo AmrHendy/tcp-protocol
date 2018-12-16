@@ -70,6 +70,7 @@ void Server::start_server(int strategy_option) {
         cout << "transfering " << ceil(1.0 * file_reader.get_file_size() / CHUNK_SIZE) << " packet" <<endl;
         // call the desired method to send the file
         file_reader.close();
+        auto start = std::chrono::high_resolution_clock::now();
         if(strategy_option == 0){
             // stop and wait
             StopAndWait stopAndWait(server_socket_fd, packet.data);
@@ -86,4 +87,7 @@ void Server::start_server(int strategy_option) {
             gbn.start();
         }
         printf("Finished Client\n");
+        auto finish = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double> elapsed = finish - start;
+        std::cout << "Elapsed time: " << elapsed.count() << " s\n";
 }

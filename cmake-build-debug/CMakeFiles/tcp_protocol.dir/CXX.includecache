@@ -20,6 +20,54 @@ stdio.h
 ../Packet/PacketHandler.h
 /home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
 
+/home/arsanuos/projects/tcp-protocol/File Handler/FileWriter.h
+string
+-
+../Packet/Packet.h
+/home/arsanuos/projects/tcp-protocol/Packet/Packet.h
+../Packet/PacketHandler.h
+/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
+
+/home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.h
+../File Handler/FileReader.h
+/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
+../File Handler/FileWriter.h
+/home/arsanuos/projects/tcp-protocol/File Handler/FileWriter.h
+../Packet/PacketHandler.h
+/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
+../Packet/Packet.h
+/home/arsanuos/projects/tcp-protocol/Packet/Packet.h
+../Packet/PacketHandler.h
+/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
+../Packet/Packet.h
+/home/arsanuos/projects/tcp-protocol/Packet/Packet.h
+../Sender/Sender.h
+/home/arsanuos/projects/tcp-protocol/Sender/Sender.h
+../Receiver/Receiver.h
+/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
+../Utils/constants.h
+/home/arsanuos/projects/tcp-protocol/Utils/constants.h
+bits/stdc++.h
+-
+stdint.h
+-
+ctime
+-
+string
+-
+vector
+-
+signal.h
+-
+stdio.h
+-
+stdbool.h
+-
+unistd.h
+-
+set
+-
+
 /home/arsanuos/projects/tcp-protocol/Packet/Packet.h
 cstdint
 -
@@ -58,6 +106,30 @@ fcntl.h
 iostream
 -
 
+/home/arsanuos/projects/tcp-protocol/SR/SR_Sender.h
+vector
+-
+thread
+-
+mutex
+-
+map
+-
+set
+-
+fstream
+-
+../File Handler/FileReader.h
+/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
+../Sender/Sender.h
+/home/arsanuos/projects/tcp-protocol/Sender/Sender.h
+../Receiver/Receiver.h
+/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
+../Utils/constants.h
+/home/arsanuos/projects/tcp-protocol/Utils/constants.h
+../Packet/PacketHandler.h
+/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
+
 /home/arsanuos/projects/tcp-protocol/Sender/Sender.h
 ../Packet/Packet.h
 /home/arsanuos/projects/tcp-protocol/Packet/Packet.h
@@ -78,6 +150,18 @@ cstring
 iostream
 -
 
+/home/arsanuos/projects/tcp-protocol/Server/Server.cpp
+Server.h
+/home/arsanuos/projects/tcp-protocol/Server/Server.h
+../File Handler/FileReader.h
+/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
+../Stop and Wait/StopAndWait.h
+/home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.h
+../SR/SR_Sender.h
+/home/arsanuos/projects/tcp-protocol/SR/SR_Sender.h
+../GBN/GBN_sender.h
+/home/arsanuos/projects/tcp-protocol/GBN/GBN_sender.h
+
 /home/arsanuos/projects/tcp-protocol/Server/Server.h
 string
 -
@@ -93,6 +177,8 @@ netinet/in.h
 -
 unistd.h
 -
+chrono
+-
 ../Sender/Sender.h
 /home/arsanuos/projects/tcp-protocol/Sender/Sender.h
 ../Receiver/Receiver.h
@@ -101,6 +187,26 @@ unistd.h
 /home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
 ../Utils/constants.h
 /home/arsanuos/projects/tcp-protocol/Utils/constants.h
+
+/home/arsanuos/projects/tcp-protocol/Stop and Wait/StopAndWait.h
+string
+-
+set
+-
+unistd.h
+-
+../File Handler/FileReader.h
+/home/arsanuos/projects/tcp-protocol/File Handler/FileReader.h
+../File Handler/FileWriter.h
+/home/arsanuos/projects/tcp-protocol/File Handler/FileWriter.h
+../Sender/Sender.h
+/home/arsanuos/projects/tcp-protocol/Sender/Sender.h
+../Receiver/Receiver.h
+/home/arsanuos/projects/tcp-protocol/Receiver/Receiver.h
+../Utils/constants.h
+/home/arsanuos/projects/tcp-protocol/Utils/constants.h
+../Packet/PacketHandler.h
+/home/arsanuos/projects/tcp-protocol/Packet/PacketHandler.h
 
 /home/arsanuos/projects/tcp-protocol/Utils/constants.h
 
