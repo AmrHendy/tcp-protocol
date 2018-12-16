@@ -66,7 +66,8 @@ void Server::start_server(int strategy_option) {
         Ack_Server_Packet server_ack_packet;
         server_ack_packet.packets_numbers = number_of_packets;
         sender.send_server_ack(server_ack_packet, server_socket_fd);
-
+        cout << "file size is " << file_reader.get_file_size() << endl;
+        cout << "transfering " << ceil(1.0 * file_reader.get_file_size() / CHUNK_SIZE) << " packet" <<endl;
         // call the desired method to send the file
         file_reader.close();
         if(strategy_option == 0){

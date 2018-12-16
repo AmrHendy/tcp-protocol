@@ -50,12 +50,14 @@ void SR_Sender::send_handling(){
                     clock_t start_time = clock();
                     window[index] = {packet, start_time};
                 } else if(window_congestion_index < window_changes.size() && sended == window_changes[window_congestion_index]){
-                    // TODO handle congestion control loss
+                    window.clear();
+                    //acked.clear();
                     sended = 0;
                     window_congestion_index++;
                     cwnd = max((int)floor(1.0 * cwnd / multiplicative_decrease), 1);
                     start_window_packet = start_window_packet;
                     end_window_packet = min(start_window_packet + cwnd - 1, total_packets - 1);
+                    mtx.unlock();
                     break;
                 } else{
                     sender.send_packet(packet, socket_fd);
@@ -73,6 +75,7 @@ void SR_Sender::send_handling(){
                     cwnd = 1;
                     start_window_packet = start_window_packet;
                     end_window_packet = start_window_packet;
+                    mtx.unlock();
                     break;
                 }
             }
@@ -91,14 +94,17 @@ void SR_Sender::recev_ack_handling(){
         if(status == 1){
             mtx.lock();
             if(PacketHandler::compare_ack_packet_checksum(ack_packet) && window.find(ack_packet.ackno) != window.end()){
+                cout << "packet " << ack_packet.ackno << " ack." << endl;
                 acked[ack_packet.ackno] = ack_packet;
                 while(start_window_packet <= end_window_packet && acked.find(start_window_packet) != acked.end()){
                     start_window_packet++;
                 }
                 if(cwnd < threshold){
                     //exp
+                    cout << "window size duplicated." << endl;
                     cwnd *= 2;
-                }else {
+                }else if(cwnd < total_packets){
+                    cout << "window size increased by " << additive_increase << endl;
                     cwnd += additive_increase;
                 }
                 end_window_packet = min(start_window_packet + cwnd - 1, total_packets - 1);

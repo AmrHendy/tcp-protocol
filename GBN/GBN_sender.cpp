@@ -20,10 +20,11 @@ GBN::GBN(string file_name, int client_fd, int N, double PLP, struct sockaddr_in 
     }
 
     get_loss_packets(PLP, 0);
+    total_packets = fileReader.get_total_packet_number();
 }
 
 bool GBN::congestion_time(){
-    if(next_seq_num == window_changes[i]){
+    if(next_seq_num + 1 == window_changes[i]){
         cout << "Congestion time" << endl;
         i++;
         window_changes[i] = window_changes[i - 1];
@@ -33,17 +34,20 @@ bool GBN::congestion_time(){
 }
 
 void GBN::start() {
-    int total_packets = fileReader.get_total_packet_number();
     bool sent = true;
     Packet pkt;
     while (1) {
-        if (fileReader.is_finished()) {
+        if (base == total_packets) {
             break;
         }
         if (sent) {
             pkt = fileReader.get_current_chunk_data();
-            if(pkt.len != -1){
-                sender.send_packet(pkt, client_fd);
+            if(pkt.len != -1 && loss_packets_indices.count(pkt.seqno)){
+                loss_packets_indices.erase(pkt.seqno);
+                //check timeout
+                time_out();
+                sent = false;
+                continue;
             }
         }
         if(congestion_time()){
@@ -77,7 +81,7 @@ bool GBN::check_timeout() {
 
 
 bool GBN::gbn_send(Packet pkt) {
-    if (next_seq_num < base + N) {
+    if (next_seq_num < base + N && pkt.len != -1) {
         sentpkt[next_seq_num] = pkt;
         sender.send_packet(pkt, client_fd);
         if (base == next_seq_num) {
@@ -110,9 +114,13 @@ void GBN::gbn_recv() {
     if (status && PacketHandler::compare_ack_packet_checksum(pkt)) {
         base = pkt.ackno + 1;
         if(N < 10){
+            cout << "window size duplicated." << endl;
             N *= 2;
-        }else{
+        } else if(N < total_packets){
+            cout << "window size increased by 1." << endl;
             N++;
+        }else{
+            //do nothing.
         }
         if (base == next_seq_num) {
             stop_timer();

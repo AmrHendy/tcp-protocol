@@ -13,6 +13,7 @@ Sender::Sender() {
 }
 
 void Sender::send_packet(Packet packet, int socket_fd) {
+    cout << "sending packet " << packet.seqno << endl;
     sendto(socket_fd, &packet, sizeof(packet),
             MSG_CONFIRM,
             (const struct sockaddr*)&socket_address,

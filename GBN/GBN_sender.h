@@ -49,7 +49,7 @@ private:
     set<int> loss_packets_indices;
     vector<int> window_changes;
     int i = 0;
-
+    int total_packets;
 
     bool is_corrupt(uint16_t cksum);
 

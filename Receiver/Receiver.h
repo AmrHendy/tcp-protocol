@@ -16,6 +16,7 @@
 #include <unistd.h>
 #include <cstring>
 #include <fcntl.h>
+#include <iostream>
 
 using namespace std;
 
@@ -26,7 +27,7 @@ public:
     explicit Receiver();
 
     static Packet receive_packet(int socket_fd, struct sockaddr_in &socket_address);
-    static Ack_Packet receive_ack_packet(int socket_fd, struct sockaddr_in socket_address, int& status, int TIMEOUT=1000);
+    static Ack_Packet receive_ack_packet(int socket_fd, struct sockaddr_in socket_address, int& status, int TIMEOUT=1);
     static Ack_Server_Packet receive_ack_server_packet(int socket_fd, struct sockaddr_in socket_address);
 };
 
