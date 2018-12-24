@@ -16,9 +16,11 @@ It works like the previous method, except that the whole window has only one tim
 
 ## Congestion Control
 **TCP** is well-known for it's congestion control process as shown in the state diagram shown below.
+
 <p align="center">
-  <img width="400" height="400" src="img/img.png">
-</p><br/>
+  <img width="650" height="500" src="img/img.png">
+</p>
+
 The state diagram shows how the server window size is dynamically changed based on the congestion of the network by using `Additive increase Multiplicative decrease`.
 
 ## Packet Loss Simulation
