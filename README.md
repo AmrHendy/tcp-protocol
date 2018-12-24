@@ -14,6 +14,11 @@ This method is practical as it doesn't work by `cumulative acknowledgements` lik
 ### Go-Back-In (GBN)
 It works like the previous method, except that the whole window has only one timer because it works by `cumulative acknowledgements`, so in case of packet loss, it retransmits the whole window again.
 
+## Error Detection By Checksum
+We provide error correction methodology by using checksum to detect most of packet transmission errors.<br/>
+We choose to make the checksum of 16 bits as in Internet checksum to make undetected errors very rare, but We can not guarantee
+completely error-free delivery because of checksumming’s limitation. 
+
 ## Congestion Control
 **TCP** is well-known for it's congestion control process as shown in the state diagram shown below.
 
