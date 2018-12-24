@@ -24,7 +24,10 @@ It works like the previous method, except that the whole window has only one tim
 The state diagram shows how the server window size is dynamically changed based on the congestion of the network by using `Additive increase Multiplicative decrease`.
 
 ## Packet Loss Simulation
-The system is given a packet loss propability in the configuration file. This *PLP* ranges from $0$ to $1$, where PLP% of the packets are considered lost. In addition, a seed value for the random generator is also given to select the indices of lost packets.
+Since we can't modify the local machines with OS, we simualted the packet loss by the following process :<br/>
+- The system is given a packet loss propability in the configuration file. This *PLP* ranges from 0 to 1, where PLP% of the packets are considered lost. 
+- In addition, a seed value for the random generator is also given to the server to select the indices of lost packets.
+- Then simulating packet loss by not calling send method on these selected lost datagrams but start their timers, So these timers will timeout later and a loss will be detected as a result.
 
 ## Prerequisite installed
 - C++11 or higher compiler.
