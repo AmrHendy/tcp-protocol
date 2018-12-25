@@ -15,8 +15,8 @@ This method is practical as it doesn't work by `cumulative acknowledgements` lik
 It works like the previous method, except that the whole window has only one timer because it works by `cumulative acknowledgements`, so in case of packet loss, it retransmits the whole window again.
 
 ## Error Detection By Checksum
-We provide error correction methodology by using checksum to detect most of packet transmission errors.<br/>
-We choose to make the checksum of 16 bits as in Internet checksum to make undetected errors very rare, but We can not guarantee
+We provide error correction methodology by using `checksum` to detect most of packet transmission errors.<br/>
+We choose to make the checksum of 16 bits as in Internet checksum to make undetected errors very rare, but we can not guarantee
 completely error-free delivery because of checksumming’s limitation. 
 
 ## Congestion Control
@@ -33,6 +33,16 @@ Since we can't modify the local machines with OS, we simualted the packet loss b
 - The system is given a packet loss propability in the configuration file. This *PLP* ranges from 0 to 1, where PLP% of the packets are considered lost. 
 - In addition, a seed value for the random generator is also given to the server to select the indices of lost packets.
 - Then simulating packet loss by not calling send method on these selected lost datagrams but start their timers, So these timers will timeout later and a loss will be detected as a result.
+
+## Features
+- [x] Reliable Data Transfer Protocol
+- [x] Stop and Wait Method
+- [x] Selective Repeat Method
+- [x] GBN Method
+- [x] Supporting all file types (HTML, TXT, Images, Videos)
+- [x] Error Detection Using Checksum
+- [x] Congestion Control Handling
+- [x] Loss Simulation to test real scenarios
 
 ## Prerequisite installed
 - C++11 or higher compiler.
