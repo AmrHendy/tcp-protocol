@@ -42,18 +42,19 @@ Since we can't modify the local machines with OS, we simualted the packet loss b
 1. Clone the project `git clone https://github.com/AmrHendy/tcp-protocol.git`.
 
 2. Update the configuration files of both server and client.
-  - `For Server` you can find the configuration file [here](Server/cmake-build-debug/server.txt) 
-     Server Configuration File contains the following:
-    - Server port number.
-    - Maximum sending sliding-window size (in datagram units).
-    - Random generator seed value (to be used in simulating packet loss).
-    - Probability p of datagram loss (to be used also in simulating packet loss)
-  - `For Client` you can find the configuration file [here](Client/cmake-build-debug/client.txt)
-    - IP address of server.
-    - Server port number.
-    - Client port number.
-    - Filename to be transferred.
-    - Initial receiving sliding-window size (in datagram units).
+  * `For Server` you can find the configuration file [here](Server/cmake-build-debug/server.txt)<br/>
+    Server Configuration File contains the following:<br/>
+    * Server port number.
+    * Maximum sending sliding-window size (in datagram units).
+    * Random generator seed value (to be used in simulating packet loss).
+    * Probability p of datagram loss (to be used also in simulating packet loss)<br/>
+  * `For Client` you can find the configuration file [here](Client/cmake-build-debug/client.txt)<br/>
+    Client Configuration File contains the following:<br/>
+    * IP address of server.
+    * Server port number.
+    * Client port number.
+    * Filename to be transferred.
+    * Initial receiving sliding-window size (in datagram units).
 
 3. You can now start transfering the file by running the [server main](Server/serverMain.cpp) and the [client main](Client/clientMain.cpp).
 
