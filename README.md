@@ -11,7 +11,7 @@ Simply, the server sends only one packet until it receives the successful acknow
 Implementation for one of the most common pipelining methods, where the server sends up to N packets with associated timers for each individual packet.<br/>
 This method is practical as it doesn't work by `cumulative acknowledgements` like **GBN**, mentioned later. Otherwise, it only sends unacknowledged packets.
 
-### Go-Back-In (GBN)
+### Go-Back-N (GBN)
 It works like the previous method, except that the whole window has only one timer because it works by `cumulative acknowledgements`, so in case of packet loss, it retransmits the whole window again.
 
 ## Error Detection By Checksum
